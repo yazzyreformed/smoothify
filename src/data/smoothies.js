@@ -1,0 +1,98 @@
+export const smoothies = [
+  {
+    id: 1,
+    name: "SPRING",
+    flavorText: "Portakal + Çilek",
+    ingredients: ["Portakal", "Çilek", "Reyhan", "Portakal Suyu", "Smoothify Sos"],
+    image: "/smootieler/1.png",
+    hoverImage: "/smootieler/11.png",
+    // Orange smoothie -> candy periwinkle / lilac blue
+    bg: ["#aab6ff", "#8a9bff", "#c08cff"],
+    accent: "#fff39e",
+    tagline: "Güne taze bir başlangıç.",
+  },
+  {
+    id: 2,
+    name: "DOPİNG",
+    flavorText: "Ceviz + Hurma",
+    ingredients: ["Ceviz", "Hurma", "Tahin", "Muz", "Badem Sütü", "Smoothify Sos"],
+    image: "/smootieler/2.png",
+    hoverImage: "/smootieler/22.png",
+    // Earthy brown -> pastel mint into bubblegum pink pop
+    bg: ["#9bf5d6", "#5fe6c2", "#ff9ecb"],
+    accent: "#fff4d6",
+    tagline: "Gün ortası enerji patlaması.",
+  },
+  {
+    id: 3,
+    name: "CHOCOFY",
+    flavorText: "Çikolata + Muz",
+    ingredients: ["Tahta Çikolata", "Muz", "Bisküvi", "Badem Sütü", "Smoothify Sos"],
+    image: "/smootieler/3.png",
+    hoverImage: "/smootieler/33.png",
+    // Chocolate brown -> pastel coral / candy pink
+    bg: ["#ffc4d6", "#ff9ec0", "#ffb38a"],
+    accent: "#fff6e8",
+    tagline: "Tatlı krizine sağlıklı cevap.",
+  },
+  {
+    id: 4,
+    name: "ALOHA",
+    flavorText: "Karpuz + Çilek",
+    ingredients: ["Karpuz", "Çilek", "Limonata", "Smoothify Sos"],
+    image: "/smootieler/4.png",
+    hoverImage: "/smootieler/44.png",
+    // Red watermelon -> pastel lime / fresh green
+    bg: ["#e6ff8f", "#bff56b", "#7fe6b8"],
+    accent: "#fffce0",
+    tagline: "Yaz, bir bardağa sığdı.",
+  },
+  {
+    id: 5,
+    name: "AÇAI",
+    flavorText: "Karadut + Yaban Mersini",
+    ingredients: ["Karadut", "Yaban Mersini", "Açai Tozu", "Badem Sütü", "Smoothify Sos"],
+    image: "/smootieler/5.png",
+    hoverImage: "/smootieler/55.png",
+    // Deep purple berry -> pastel lime green / mint
+    bg: ["#c2f7a0", "#8ae88f", "#5fd6c4"],
+    accent: "#fffce0",
+    tagline: "Antioksidan dolu mor güç.",
+  },
+  {
+    id: 6,
+    name: "ACIDIC",
+    flavorText: "Nane + Salatalık",
+    ingredients: ["Nane", "Salatalık", "Limon Suyu", "Limonata", "Smoothify Sos"],
+    image: "/smootieler/6.png",
+    hoverImage: "/smootieler/66.png",
+    // Green mint -> candy pink into lavender purple
+    bg: ["#ffc1e3", "#ff9ed6", "#c79bff"],
+    accent: "#fff3fb",
+    tagline: "Buz gibi ferahlık.",
+  },
+  {
+    id: 7,
+    name: "LOST PARADISE",
+    flavorText: "Karadut + Böğürtlen",
+    ingredients: ["Karadut", "Yaban Mersini", "Böğürtlen", "Limonata", "Smoothify Sos"],
+    image: "/smootieler/7.png",
+    hoverImage: "/smootieler/77.png",
+    // Dark berry -> pastel peach into coral pink
+    bg: ["#ffd9a0", "#ffb08f", "#ff9ec0"],
+    accent: "#fff6e6",
+    tagline: "Kaybolmaya değer bir tat.",
+  },
+  {
+    id: 8,
+    name: "HAWAIIAN",
+    flavorText: "Mango + Ananas",
+    ingredients: ["Mango", "Ananas", "Ananas Suyu", "Smoothify Sos"],
+    image: "/smootieler/8.png",
+    hoverImage: "/smootieler/88.png",
+    // Yellow mango -> pastel sky blue into violet
+    bg: ["#a8d8ff", "#8ab2ff", "#bf9cff"],
+    accent: "#fff0c8",
+    tagline: "Tropik bir kaçamak.",
+  },
+];

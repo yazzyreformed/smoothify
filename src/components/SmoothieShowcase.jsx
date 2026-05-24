@@ -1,106 +1,18 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { smoothies } from "../data/smoothies";
 import "./SmoothieShowcase.css";
 
-const smoothies = [
-  {
-    id: 1,
-    name: "SPRING",
-    flavorText: "Portakal + Çilek",
-    ingredients: ["Portakal", "Çilek", "Reyhan", "Portakal Suyu", "Smoothify Sos"],
-    image: "/smootieler/1.png",
-    hoverImage: "/smootieler/11.png",
-    // Orange smoothie -> candy periwinkle / lilac blue
-    bg: ["#aab6ff", "#8a9bff", "#c08cff"],
-    accent: "#fff39e",
-  },
-  {
-    id: 2,
-    name: "DOPİNG",
-    flavorText: "Ceviz + Hurma",
-    ingredients: ["Ceviz", "Hurma", "Tahin", "Muz", "Badem Sütü", "Smoothify Sos"],
-    image: "/smootieler/2.png",
-    hoverImage: "/smootieler/22.png",
-    // Earthy brown -> pastel mint into bubblegum pink pop
-    bg: ["#9bf5d6", "#5fe6c2", "#ff9ecb"],
-    accent: "#fff4d6",
-  },
-  {
-    id: 3,
-    name: "CHOCOFY",
-    flavorText: "Çikolata + Muz",
-    ingredients: ["Tahta Çikolata", "Muz", "Bisküvi", "Badem Sütü", "Smoothify Sos"],
-    image: "/smootieler/3.png",
-    hoverImage: "/smootieler/33.png",
-    // Chocolate brown -> pastel coral / candy pink
-    bg: ["#ffc4d6", "#ff9ec0", "#ffb38a"],
-    accent: "#fff6e8",
-  },
-  {
-    id: 4,
-    name: "ALOHA",
-    flavorText: "Karpuz + Çilek",
-    ingredients: ["Karpuz", "Çilek", "Limonata", "Smoothify Sos"],
-    image: "/smootieler/4.png",
-    hoverImage: "/smootieler/44.png",
-    // Red watermelon -> pastel lime / fresh green
-    bg: ["#e6ff8f", "#bff56b", "#7fe6b8"],
-    accent: "#fffce0",
-  },
-  {
-    id: 5,
-    name: "AÇAI",
-    flavorText: "Karadut + Yaban Mersini",
-    ingredients: ["Karadut", "Yaban Mersini", "Açai Tozu", "Badem Sütü", "Smoothify Sos"],
-    image: "/smootieler/5.png",
-    hoverImage: "/smootieler/55.png",
-    // Deep purple berry -> pastel lime green / mint
-    bg: ["#c2f7a0", "#8ae88f", "#5fd6c4"],
-    accent: "#fffce0",
-  },
-  {
-    id: 6,
-    name: "ACIDIC",
-    flavorText: "Nane + Salatalık",
-    ingredients: ["Nane", "Salatalık", "Limon Suyu", "Limonata", "Smoothify Sos"],
-    image: "/smootieler/6.png",
-    hoverImage: "/smootieler/66.png",
-    // Green mint -> candy pink into lavender purple
-    bg: ["#ffc1e3", "#ff9ed6", "#c79bff"],
-    accent: "#fff3fb",
-  },
-  {
-    id: 7,
-    name: "LOST PARADISE",
-    flavorText: "Karadut + Böğürtlen",
-    ingredients: ["Karadut", "Yaban Mersini", "Böğürtlen", "Limonata", "Smoothify Sos"],
-    image: "/smootieler/7.png",
-    hoverImage: "/smootieler/77.png",
-    // Dark berry -> pastel peach into coral pink
-    bg: ["#ffd9a0", "#ffb08f", "#ff9ec0"],
-    accent: "#fff6e6",
-  },
-  {
-    id: 8,
-    name: "HAWAIIAN",
-    flavorText: "Mango + Ananas",
-    ingredients: ["Mango", "Ananas", "Ananas Suyu", "Smoothify Sos"],
-    image: "/smootieler/8.png",
-    hoverImage: "/smootieler/88.png",
-    // Yellow mango -> pastel sky blue into violet
-    bg: ["#a8d8ff", "#8ab2ff", "#bf9cff"],
-    accent: "#fff0c8",
-  },
-];
-
 const TRANSITION_MS = 720;
+const AUTOPLAY_MS = 5000;
 
 export default function SmoothieShowcase() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState(null);
   const [direction, setDirection] = useState(1);
   const lockRef = useRef(false);
-  const wheelAccum = useRef(0);
   const activeIndexRef = useRef(0);
+  const autoplayRef = useRef(null);
+  const pausedRef = useRef(false);
 
   useEffect(() => {
     activeIndexRef.current = activeIndex;
@@ -121,61 +33,74 @@ export default function SmoothieShowcase() {
     }, TRANSITION_MS);
   }, []);
 
+  const startAutoplay = useCallback(() => {
+    window.clearInterval(autoplayRef.current);
+    autoplayRef.current = window.setInterval(() => {
+      if (pausedRef.current) return;
+      goTo(activeIndexRef.current + 1, 1);
+    }, AUTOPLAY_MS);
+  }, [goTo]);
+
   const step = useCallback(
     (dir) => {
-      const next = activeIndexRef.current + dir;
-      goTo(next, dir);
+      goTo(activeIndexRef.current + dir, dir);
+      startAutoplay(); // reset timer on manual interaction
     },
-    [goTo]
+    [goTo, startAutoplay]
   );
 
-  // Wheel / pinned scroll handling with throttle + transition lock
+  const jumpTo = useCallback(
+    (i) => {
+      const dir = i >= activeIndexRef.current ? 1 : -1;
+      goTo(i, dir);
+      startAutoplay();
+    },
+    [goTo, startAutoplay]
+  );
+
+  // Autoplay lifecycle
   useEffect(() => {
-    const onWheel = (e) => {
-      e.preventDefault();
-      if (lockRef.current) return;
+    const reduce = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    if (!reduce) startAutoplay();
+    return () => window.clearInterval(autoplayRef.current);
+  }, [startAutoplay]);
 
-      wheelAccum.current += e.deltaY;
-      const threshold = 28;
-
-      if (wheelAccum.current > threshold) {
-        wheelAccum.current = 0;
-        step(1);
-      } else if (wheelAccum.current < -threshold) {
-        wheelAccum.current = 0;
-        step(-1);
-      }
-    };
-
-    window.addEventListener("wheel", onWheel, { passive: false });
-    return () => window.removeEventListener("wheel", onWheel);
-  }, [step]);
-
-  // Keyboard arrows
+  // Keyboard arrows (does not hijack page scroll)
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowDown") step(1);
-      if (e.key === "ArrowLeft" || e.key === "ArrowUp") step(-1);
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [step]);
 
-  // Touch swipe (vertical) support
+  // Horizontal touch swipe (leaves vertical scroll to the page)
   useEffect(() => {
+    let startX = null;
     let startY = null;
-    const onStart = (e) => (startY = e.touches[0].clientY);
+    const onStart = (e) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    };
     const onEnd = (e) => {
-      if (startY === null) return;
+      if (startX === null) return;
+      const dx = startX - e.changedTouches[0].clientX;
       const dy = startY - e.changedTouches[0].clientY;
-      if (Math.abs(dy) > 40) step(dy > 0 ? 1 : -1);
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+        step(dx > 0 ? 1 : -1);
+      }
+      startX = null;
       startY = null;
     };
-    window.addEventListener("touchstart", onStart, { passive: true });
-    window.addEventListener("touchend", onEnd, { passive: true });
+    const el = document.getElementById("anasayfa");
+    el?.addEventListener("touchstart", onStart, { passive: true });
+    el?.addEventListener("touchend", onEnd, { passive: true });
     return () => {
-      window.removeEventListener("touchstart", onStart);
-      window.removeEventListener("touchend", onEnd);
+      el?.removeEventListener("touchstart", onStart);
+      el?.removeEventListener("touchend", onEnd);
     };
   }, [step]);
 
@@ -190,7 +115,13 @@ export default function SmoothieShowcase() {
   };
 
   return (
-    <section className="showcase" style={sectionStyle}>
+    <section
+      id="anasayfa"
+      className="showcase"
+      style={sectionStyle}
+      onMouseEnter={() => (pausedRef.current = true)}
+      onMouseLeave={() => (pausedRef.current = false)}
+    >
       {/* animated layered background */}
       <div className="bg-base" />
       <div className="bg-blob blob-a" />
@@ -273,6 +204,27 @@ export default function SmoothieShowcase() {
           );
         })}
       </div>
+
+      {/* progress dots */}
+      <div className="hero-dots" role="tablist" aria-label="Smoothie seçimi">
+        {smoothies.map((s, i) => (
+          <button
+            key={s.id}
+            className={"hero-dot" + (i === activeIndex ? " active" : "")}
+            aria-label={s.name}
+            aria-selected={i === activeIndex}
+            onClick={() => jumpTo(i)}
+          />
+        ))}
+      </div>
+
+      {/* scroll cue */}
+      <a className="scroll-cue" href="#smoothies" aria-label="Aşağı kaydır">
+        <span>keşfet</span>
+        <span className="scroll-cue-mouse">
+          <span className="scroll-cue-dot" />
+        </span>
+      </a>
     </section>
   );
 }

@@ -1,0 +1,157 @@
+.grid-section {
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+}
+
+.grid-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: clamp(40px, 6vh, 72px);
+}
+.grid-head .section-lead {
+  margin-top: 14px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(18px, 2vw, 28px);
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 26px;
+  padding: 22px 22px 26px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.4s ease;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--g1), var(--g2));
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+/* visual with ingredient reveal */
+.card-visual {
+  position: relative;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.card-glow {
+  position: absolute;
+  width: 78%;
+  height: 78%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 45%, var(--g1), var(--g2));
+  filter: blur(28px);
+  opacity: 0.45;
+  transform: scale(0.9);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+.card:hover .card-glow {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.card-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 20px 22px rgba(42, 28, 61, 0.22));
+  transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.45s ease;
+}
+.card-img.base {
+  opacity: 1;
+}
+.card-img.hover {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.03);
+  filter: drop-shadow(0 20px 22px rgba(42, 28, 61, 0.22)) blur(7px);
+}
+.card:hover .card-img.base {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.97);
+  filter: drop-shadow(0 20px 22px rgba(42, 28, 61, 0.22)) blur(6px);
+}
+.card:hover .card-img.hover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.04);
+  filter: drop-shadow(0 22px 26px rgba(42, 28, 61, 0.26)) blur(0);
+}
+
+.card-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.card-flavor {
+  margin: 2px 0 0;
+  font-family: "Caveat Brush", cursive;
+  font-size: 26px;
+  line-height: 1;
+  background: linear-gradient(90deg, var(--g1), var(--g2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: saturate(1.2) brightness(0.82);
+}
+.card-tag {
+  margin: 10px 0 14px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.45;
+  min-height: 40px;
+}
+
+.chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chip {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  background: rgba(42, 28, 61, 0.05);
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 1080px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-visual {
+    height: 300px;
+  }
+}
