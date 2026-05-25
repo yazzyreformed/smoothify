@@ -13,7 +13,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("/hero.png") center center / cover no-repeat;
+  background: url("/hero.png") left center / cover no-repeat;
 }
 
 /* pink -> purple wash, heavier on the right so white text pops */
@@ -25,27 +25,27 @@
     linear-gradient(
       102deg,
       rgba(255, 138, 170, 0) 0%,
-      rgba(255, 130, 175, 0.18) 28%,
-      rgba(224, 120, 200, 0.62) 50%,
-      rgba(185, 110, 224, 0.85) 74%,
-      rgba(166, 104, 230, 0.92) 100%
+      rgba(255, 130, 175, 0) 45%,
+      rgba(224, 120, 200, 0.32) 65%,
+      rgba(185, 110, 224, 0.76) 82%,
+      rgba(166, 104, 230, 0.90) 100%
     ),
-    linear-gradient(180deg, rgba(120, 70, 150, 0.16), rgba(120, 70, 150, 0.04));
+    linear-gradient(180deg, rgba(120, 70, 150, 0.04), rgba(120, 70, 150, 0.005));
 }
 
 .ph-inner {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: var(--maxw);
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 clamp(22px, 5vw, 56px);
+  padding: 0 clamp(24px, 7vw, 120px);
   display: flex;
   justify-content: flex-end;
 }
 
 .ph-content {
-  width: min(620px, 92%);
+  width: min(800px, 92%);
   color: #fff;
 }
 
@@ -61,8 +61,8 @@
   margin: 0;
   font-family: "Caveat Brush", cursive;
   font-weight: 400;
-  font-size: clamp(52px, 6.4vw, 104px);
-  line-height: 0.96;
+  font-size: clamp(52px, 5.8vw, 96px);
+  line-height: 0.98;
   letter-spacing: 0.01em;
   text-shadow: 0 8px 36px rgba(70, 25, 80, 0.32);
 }

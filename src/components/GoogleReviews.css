@@ -1,0 +1,314 @@
+/* GoogleReviews.css */
+
+.google-reviews {
+  background: var(--cream);
+  padding: clamp(80px, 11vh, 140px) 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.google-reviews-inner {
+  width: 100%;
+}
+
+.reviews-title-block {
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 0 clamp(20px, 5vw, 56px);
+}
+
+.reviews-title {
+  font-weight: 800;
+  font-size: clamp(32px, 4.5vw, 58px);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0;
+}
+
+.reviews-title-script {
+  font-family: "Pacifico", cursive;
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+  text-transform: none;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* Google Badge Details */
+.google-badge-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(40px, 6vh, 70px);
+  padding: 0 clamp(20px, 5vw, 56px);
+}
+
+.google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.google-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(255, 95, 162, 0.15);
+}
+
+.google-badge-text {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.google-badge-stars {
+  display: flex;
+  gap: 3px;
+  color: #ffb703;
+}
+
+.google-badge-rating {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+/* Infinite Marquee Layout */
+.marquee-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+/* Soft gradients fading out on the left and right edges for a premium depth look */
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(50px, 12vw, 200px);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--cream) 0%, rgba(255, 247, 239, 0) 100%);
+}
+
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--cream) 0%, rgba(255, 247, 239, 0) 100%);
+}
+
+.marquee-row {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+}
+
+/* Infinite Marquee Animations */
+.marquee-row.left {
+  animation: marqueeLeft 42s linear infinite;
+}
+
+.marquee-row.right {
+  animation: marqueeRight 42s linear infinite;
+}
+
+/* Pause scroll when any card or row is hovered */
+.marquee-wrapper:hover .marquee-row {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Card Styling inside Marquee */
+.review-card {
+  width: 360px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(42, 28, 61, 0.08);
+  border-color: rgba(255, 95, 162, 0.25);
+}
+
+/* Card Header elements */
+.review-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-user-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.review-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(42, 28, 61, 0.08);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid #fff;
+}
+
+.review-user-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.review-user-name {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.review-date {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.review-google-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ea4335;
+}
+
+/* Card Review stars & texts */
+.review-stars {
+  display: flex;
+  gap: 4px;
+  color: #ffb703;
+}
+
+.review-text {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Bottom CTA Banner matching screenshot */
+.reviews-cta-banner {
+  text-align: center;
+  margin-top: clamp(60px, 9vh, 100px);
+  padding: 0 clamp(20px, 5vw, 56px);
+}
+
+.reviews-cta-title {
+  font-size: clamp(34px, 5vw, 68px);
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin: 0 0 24px;
+}
+
+/* Pill CTA Button */
+.google-write-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  background: var(--ink);
+  padding: 16px 36px;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0 8px 24px rgba(42, 28, 61, 0.2);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.google-write-btn:hover {
+  background: var(--brand-pink);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 35px rgba(255, 95, 162, 0.35);
+}
+
+.google-write-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Responsive spacing tweaks */
+@media (max-width: 900px) {
+  .google-reviews {
+    padding: clamp(60px, 8vh, 100px) 0;
+  }
+  .review-card {
+    width: 320px;
+    padding: 20px;
+  }
+  .marquee-row {
+    gap: 16px;
+  }
+  .marquee-wrapper {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .google-write-btn {
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+}

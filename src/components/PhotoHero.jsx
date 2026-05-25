@@ -1,4 +1,4 @@
-import { goToSection } from "../router.js";
+import { navigate, goToSection } from "../router.js";
 import "./PhotoHero.css";
 
 export default function PhotoHero() {
@@ -24,11 +24,11 @@ export default function PhotoHero() {
 
           <div className="ph-actions">
             <a
-              href="#smoothies"
+              href="#showcase"
               className="ph-cta"
               onClick={(e) => {
                 e.preventDefault();
-                goToSection("smoothies");
+                goToSection("showcase");
               }}
             >
               Smoothie'leri keşfet
@@ -36,11 +36,11 @@ export default function PhotoHero() {
             </a>
 
             <a
-              href="#hakkimizda"
+              href="/hakkimizda"
               className="ph-play"
               onClick={(e) => {
                 e.preventDefault();
-                goToSection("hakkimizda");
+                navigate("/hakkimizda");
               }}
             >
               <span className="ph-play-circle" aria-hidden="true">
