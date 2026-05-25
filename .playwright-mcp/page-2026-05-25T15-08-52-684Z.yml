@@ -1,0 +1,552 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "Zemhery" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img "Zemhery" [ref=e4]
+    - generic [ref=e5]:
+      - link "MENÜ" [ref=e6] [cursor=pointer]:
+        - /url: menu.html
+      - link "HAKKIMIZDA" [ref=e7] [cursor=pointer]:
+        - /url: hakkimizda.html
+      - link "İLETİŞİM" [ref=e8] [cursor=pointer]:
+        - /url: iletisim.html
+      - link "SİPARİŞ VER" [ref=e9] [cursor=pointer]:
+        - /url: https://www.yemeksepeti.com/restaurant/ctfj/zemhery-bakery?srsltid=AfmBOoqaTXfPtW1l4yxARTyCTRnalE66anWAgKM4HPOY8YCUl1pPh1kc
+  - generic [ref=e11]:
+    - img "Zemhery Bread" [ref=e12]
+    - generic:
+      - heading "ZEMHERY BAKERY" [level=1]:
+        - text: ZEMHERY
+        - text: BAKERY
+      - paragraph: Yarım asırlık fırıncılık deneyimi 👩‍🍳🎗
+      - link "KATALOĞU GÖR →" [ref=e14] [cursor=pointer]:
+        - /url: menu.html
+  - generic [ref=e15]:
+    - generic [ref=e18]:
+      - heading "FIRINDAN TAZE" [level=2] [ref=e19]
+      - paragraph [ref=e20]: Fırıncılarımız her sabah sadece un, su, tuz ve zaman kullanarak mükemmelliği yaratıyor. Gerçek ekşi mayanın tadını keşfedin.
+      - link "MENÜMÜZE ULAŞIN →" [ref=e21] [cursor=pointer]:
+        - /url: menu.html
+        - generic [ref=e22]: MENÜMÜZE ULAŞIN
+        - generic [ref=e23]: →
+    - generic [ref=e28]:
+      - heading "SİZE ÖZEL PASTA TASARIMLARI" [level=2] [ref=e29]
+      - paragraph [ref=e30]: Her pasta, bir hikâyeyi anlatır. Usta ekibimiz; doğum günleriniz, düğünleriniz ve hayatınızın en özel anları için sizinle birlikte tasarlıyor. Formdan fırına, her detay yalnızca size özel.
+      - link "SİPARİŞ VERİN →" [ref=e31] [cursor=pointer]:
+        - /url: menu.html#ozel-siparisler
+        - generic [ref=e32]: SİPARİŞ VERİN
+        - generic [ref=e33]: →
+  - generic [ref=e39]:
+    - img [ref=e41]:
+      - generic:
+        - generic:
+          - generic: HAMURUN
+          - generic: BÜYÜSÜ
+    - generic:
+      - generic:
+        - img "Zemhery"
+      - generic:
+        - img "Zemhery"
+      - generic:
+        - img "Zemhery"
+      - generic:
+        - img "Zemhery"
+      - generic:
+        - img "Zemhery"
+      - generic:
+        - img "Zemhery"
+  - generic [ref=e45]:
+    - generic [ref=e46]:
+      - paragraph [ref=e47]: SİZE ÖZEL TASARIM
+      - heading "Her Pasta, Bir Hikaye." [level=2] [ref=e48]:
+        - text: Her Pasta,
+        - emphasis [ref=e49]: Bir Hikaye.
+      - paragraph [ref=e50]: Doğum günleriniz, düğünleriniz ve hayatınızın en özel anları için tek tek elde tasarlanan 60+ butik pasta. Her detay, sizin hikâyenize özel.
+      - link "SİPARİŞ VER →" [ref=e51] [cursor=pointer]:
+        - /url: menu.html#ozel-siparisler
+    - generic:
+      - generic:
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+      - generic:
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+        - img "Özel Pasta"
+  - generic [ref=e53]:
+    - heading "Lezzetin Ardındaki Eller" [level=2] [ref=e54]:
+      - text: Lezzetin Ardındaki
+      - emphasis [ref=e55]: Eller
+    - paragraph [ref=e56]: Her tasarım, yarım asırdır sabırla yoğrulan ustalarımızın atölyesinde hayat buluyor.
+  - generic [ref=e57]:
+    - img "Kitchen" [ref=e58]
+    - link "Mutfağımıza Adım Atın Makaleyi Oku →":
+      - /url: hakkimizda.html#ustalarimiz
+      - generic [ref=e59] [cursor=pointer]:
+        - heading "Mutfağımıza Adım Atın" [level=3] [ref=e60]
+        - paragraph [ref=e61]: Makaleyi Oku →
+  - generic [ref=e62]:
+    - generic [ref=e63]:
+      - heading "Misafirlerimizin Deneyimleri" [level=2] [ref=e64]
+      - generic [ref=e65]:
+        - img [ref=e66]
+        - generic [ref=e71]: Google Yorumları
+        - generic [ref=e72]: ★★★★★
+        - generic [ref=e73]: "4.5"
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]: ZK
+          - generic [ref=e79]:
+            - paragraph [ref=e80]: Zeynep Kul
+            - paragraph [ref=e81]: 2 ay önce · Yerel Rehber
+          - img [ref=e82]
+        - generic [ref=e87]: ★★★★★
+        - paragraph [ref=e88]: Bugün kahvaltı ettik — inanılmaz lezzetli anne kızartması, kaliteli peynirler ve gerçek zeytinyağıyla söğüş tabağı. Tertemiz servis elemanları ve şık masalarıyla gerçekten çok farklı bir mekan. Teşekkürler!
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - generic [ref=e91]: FF
+          - generic [ref=e92]:
+            - paragraph [ref=e93]: Fidan Fırat
+            - paragraph [ref=e94]: 4 ay önce · Yerel Rehber
+          - img [ref=e95]
+        - generic [ref=e100]: ★★★★★
+        - paragraph [ref=e101]: Hayatımda yediğim en güzel profiteröl. Bol fıstık konmuş, gerçek yoğun çikolata tadı var; kavanoz olduğu için yavaş yavaş yeme şansınız da oluyor. Ellerinize sağlık!
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]: BÇ
+          - generic [ref=e105]:
+            - paragraph [ref=e106]: Büşra Çevik
+            - paragraph [ref=e107]: 7 ay önce
+          - img [ref=e108]
+        - generic [ref=e113]: ★★★★★
+        - paragraph [ref=e114]: Hem kendi baby shower'ım hem de yakın arkadaşımın için burayı tercih ettik. 16 kişilik kahvaltı + pasta rezervasyonu yaptırdık. Pastasından kahvaltısına, kahvelerine kadar her şey harikaydı.
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - generic [ref=e117]: SG
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Sinem Gök
+            - paragraph [ref=e120]: 7 ay önce · Yerel Rehber
+          - img [ref=e121]
+        - generic [ref=e126]: ★★★★★
+        - paragraph [ref=e127]: İnstagramda takiple başlayıp tesadüfen yolumun üstünde olunca yaş pastasını denemek istedim. İlk defa alacağım için tereddüt ettim işin açığı, ancak pastayı yedikten sonra iyi ki dedim 😇 Tazeliği kalitesi lezzeti tartışılmazmış gerçekten 😌
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic [ref=e130]: ET
+          - generic [ref=e131]:
+            - paragraph [ref=e132]: Emin Tosya
+            - paragraph [ref=e133]: 5 ay önce
+          - img [ref=e134]
+        - generic [ref=e139]: ★★★★★
+        - paragraph [ref=e140]: Tadı damağınızda kalacak lezzetler çıkarıyolar ortaya, bütün çalışanları güler yüzlü, samimi bir yer, kesinlikle tavsiye ediyorum.. 🖤
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - generic [ref=e143]: İT
+          - generic [ref=e144]:
+            - paragraph [ref=e145]: İsmail Tarkan Tekin
+            - paragraph [ref=e146]: 11 ay önce
+          - img [ref=e147]
+        - generic [ref=e152]: ★★★★★
+        - paragraph [ref=e153]: Sabah kahvaltıya geldim aslına bakarsak biraz endişeliydim ama gerçekten ters köşe oldum 😇 hem kaliteli hem taze ve bir o kadar da lezzetliydi. Özellikle Süleyman beyin ilgi ve alakası gerçekten bana kendimi özel hissettirdi. Emeği geçen herkese çok teşekkür ederim elinize emeğinize sağlık. 🥰😇
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - generic [ref=e156]: FD
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: Fatma Dikmen
+            - paragraph [ref=e159]: 11 ay önce
+          - img [ref=e160]
+        - generic [ref=e165]: ★★★★★
+        - paragraph [ref=e166]: Eşimin ve oğlumun doğum günü için pasta siparişi verdim. Bir pasta da iki doğum gününü bir arada kutlamak istedim ona göre pastayı dizayn ettiler. Demet hanım sağolsun çok ilgilendi. Pastamızı bize zahmet olmasın diye eve kadar getirdiler. Tercihim yine kendileri olacak. İşleri bol, kazançları bereketli olsun. 🌸
+      - generic [ref=e167]:
+        - generic [ref=e168]:
+          - generic [ref=e169]: MA
+          - generic [ref=e170]:
+            - paragraph [ref=e171]: Melike Aksak
+            - paragraph [ref=e172]: 1 yıl önce
+          - img [ref=e173]
+        - generic [ref=e178]: ★★★★★
+        - paragraph [ref=e179]: Ankara'nın en mükemmel pidesini, tost ekmeğini ve artizan ekmeklerini pastalarını ve tatlılarını bulabileceğiniz herşeyin taptaze olduğu eşsiz bir fırın. Her daim temiz, taze ve güler yüzlü hizmetiniz için iyi ki varsınız!!!
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]: AY
+          - generic [ref=e183]:
+            - paragraph [ref=e184]: Ahmet Yılmaz
+            - paragraph [ref=e185]: 1 yıl önce
+          - img [ref=e186]
+        - generic [ref=e191]: ★★★★★
+        - paragraph [ref=e192]: Torunumun doğum günü pastasını yaptırdık. Çok özenli ve istediğimiz gibi hazırlanmıştı. Çok çok teşekkür ederiz. Emeğinize sağlık.
+      - generic [ref=e193]:
+        - generic [ref=e194]:
+          - generic [ref=e195]: ZK
+          - generic [ref=e196]:
+            - paragraph [ref=e197]: Zeynep Kul
+            - paragraph [ref=e198]: 2 ay önce · Yerel Rehber
+          - img [ref=e199]
+        - generic [ref=e204]: ★★★★★
+        - paragraph [ref=e205]: Bugün kahvaltı ettik — inanılmaz lezzetli anne kızartması, kaliteli peynirler ve gerçek zeytinyağıyla söğüş tabağı. Tertemiz servis elemanları ve şık masalarıyla gerçekten çok farklı bir mekan. Teşekkürler!
+      - generic [ref=e206]:
+        - generic [ref=e207]:
+          - generic [ref=e208]: FF
+          - generic [ref=e209]:
+            - paragraph [ref=e210]: Fidan Fırat
+            - paragraph [ref=e211]: 4 ay önce · Yerel Rehber
+          - img [ref=e212]
+        - generic [ref=e217]: ★★★★★
+        - paragraph [ref=e218]: Hayatımda yediğim en güzel profiteröl. Bol fıstık konmuş, gerçek yoğun çikolata tadı var; kavanoz olduğu için yavaş yavaş yeme şansınız da oluyor. Ellerinize sağlık!
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - generic [ref=e221]: BÇ
+          - generic [ref=e222]:
+            - paragraph [ref=e223]: Büşra Çevik
+            - paragraph [ref=e224]: 7 ay önce
+          - img [ref=e225]
+        - generic [ref=e230]: ★★★★★
+        - paragraph [ref=e231]: Hem kendi baby shower'ım hem de yakın arkadaşımın için burayı tercih ettik. 16 kişilik kahvaltı + pasta rezervasyonu yaptırdık. Pastasından kahvaltısına, kahvelerine kadar her şey harikaydı.
+      - generic [ref=e232]:
+        - generic [ref=e233]:
+          - generic [ref=e234]: SG
+          - generic [ref=e235]:
+            - paragraph [ref=e236]: Sinem Gök
+            - paragraph [ref=e237]: 7 ay önce · Yerel Rehber
+          - img [ref=e238]
+        - generic [ref=e243]: ★★★★★
+        - paragraph [ref=e244]: İnstagramda takiple başlayıp tesadüfen yolumun üstünde olunca yaş pastasını denemek istedim. İlk defa alacağım için tereddüt ettim işin açığı, ancak pastayı yedikten sonra iyi ki dedim 😇 Tazeliği kalitesi lezzeti tartışılmazmış gerçekten 😌
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e247]: ET
+          - generic [ref=e248]:
+            - paragraph [ref=e249]: Emin Tosya
+            - paragraph [ref=e250]: 5 ay önce
+          - img [ref=e251]
+        - generic [ref=e256]: ★★★★★
+        - paragraph [ref=e257]: Tadı damağınızda kalacak lezzetler çıkarıyolar ortaya, bütün çalışanları güler yüzlü, samimi bir yer, kesinlikle tavsiye ediyorum.. 🖤
+      - generic [ref=e258]:
+        - generic [ref=e259]:
+          - generic [ref=e260]: İT
+          - generic [ref=e261]:
+            - paragraph [ref=e262]: İsmail Tarkan Tekin
+            - paragraph [ref=e263]: 11 ay önce
+          - img [ref=e264]
+        - generic [ref=e269]: ★★★★★
+        - paragraph [ref=e270]: Sabah kahvaltıya geldim aslına bakarsak biraz endişeliydim ama gerçekten ters köşe oldum 😇 hem kaliteli hem taze ve bir o kadar da lezzetliydi. Özellikle Süleyman beyin ilgi ve alakası gerçekten bana kendimi özel hissettirdi. Emeği geçen herkese çok teşekkür ederim elinize emeğinize sağlık. 🥰😇
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - generic [ref=e273]: FD
+          - generic [ref=e274]:
+            - paragraph [ref=e275]: Fatma Dikmen
+            - paragraph [ref=e276]: 11 ay önce
+          - img [ref=e277]
+        - generic [ref=e282]: ★★★★★
+        - paragraph [ref=e283]: Eşimin ve oğlumun doğum günü için pasta siparişi verdim. Bir pasta da iki doğum gününü bir arada kutlamak istedim ona göre pastayı dizayn ettiler. Demet hanım sağolsun çok ilgilendi. Pastamızı bize zahmet olmasın diye eve kadar getirdiler. Tercihim yine kendileri olacak. İşleri bol, kazançları bereketli olsun. 🌸
+      - generic [ref=e284]:
+        - generic [ref=e285]:
+          - generic [ref=e286]: MA
+          - generic [ref=e287]:
+            - paragraph [ref=e288]: Melike Aksak
+            - paragraph [ref=e289]: 1 yıl önce
+          - img [ref=e290]
+        - generic [ref=e295]: ★★★★★
+        - paragraph [ref=e296]: Ankara'nın en mükemmel pidesini, tost ekmeğini ve artizan ekmeklerini pastalarını ve tatlılarını bulabileceğiniz herşeyin taptaze olduğu eşsiz bir fırın. Her daim temiz, taze ve güler yüzlü hizmetiniz için iyi ki varsınız!!!
+      - generic [ref=e297]:
+        - generic [ref=e298]:
+          - generic [ref=e299]: AY
+          - generic [ref=e300]:
+            - paragraph [ref=e301]: Ahmet Yılmaz
+            - paragraph [ref=e302]: 1 yıl önce
+          - img [ref=e303]
+        - generic [ref=e308]: ★★★★★
+        - paragraph [ref=e309]: Torunumun doğum günü pastasını yaptırdık. Çok özenli ve istediğimiz gibi hazırlanmıştı. Çok çok teşekkür ederiz. Emeğinize sağlık.
+    - generic [ref=e311]:
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - generic [ref=e314]: SK
+          - generic [ref=e315]:
+            - paragraph [ref=e316]: Soner Karaca
+            - paragraph [ref=e317]: 6 ay önce
+          - img [ref=e318]
+        - generic [ref=e323]: ★★★★★
+        - paragraph [ref=e324]: Dördüncü hafta sonu oldu buraya geliyoruz. Lezzetleri çok güzel, kahvaltısı harika. Nurcan hanım, Süleyman bey, Canan hanım çok güleryüzlü ve ilgili. Başarılarınız daim olsun!
+      - generic [ref=e325]:
+        - generic [ref=e326]:
+          - generic [ref=e327]: MÇ
+          - generic [ref=e328]:
+            - paragraph [ref=e329]: Murat Çelik
+            - paragraph [ref=e330]: 2 yıl önce · Yerel Rehber
+          - img [ref=e331]
+        - generic [ref=e336]: ★★★★★
+        - paragraph [ref=e337]: Yaşamkent çevresinde pek çok bakery var, ama Zemhery hem fiyatı hem kalitesiyle kendini öne çıkarmış. Simit, ekmek, poğaça çok iyi; pastane kısmı da çok iyi. Dükkanın dizayn ve temizliği mükemmel. ♥
+      - generic [ref=e338]:
+        - generic [ref=e339]:
+          - generic [ref=e340]: OY
+          - generic [ref=e341]:
+            - paragraph [ref=e342]: Orhan Yılmaz
+            - paragraph [ref=e343]: 1 yıl önce
+          - img [ref=e344]
+        - generic [ref=e349]: ★★★★★
+        - paragraph [ref=e350]: Kesinlikle Ankara'daki favori yerim. Şerbetli tatlılarla aram yoktu ama fıstıklı baklavaları favorim oldu — kesinlikle deneyin. Her ürün yedikten sonra 10 dk şaşırma ve övme seansımız başlar. ❤️
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - generic [ref=e353]: İK
+          - generic [ref=e354]:
+            - paragraph [ref=e355]: İsmail Küsmenoğlu
+            - paragraph [ref=e356]: 1 yıl önce · Yerel Rehber
+          - img [ref=e357]
+        - generic [ref=e362]: ★★★★★
+        - paragraph [ref=e363]: Su böreği nefis. Halis tereyağlı. Ankara'da yediğim en lezzetli su böreği idi. Kahvaltı fiyatları bulunduğu lokasyona göre ucuz. Yiyeceklerinde tuz oranı az, sağlık açısından olumlu. Personel güleryüzlü. Teşekkür ederim.
+      - generic [ref=e364]:
+        - generic [ref=e365]:
+          - generic [ref=e366]: HT
+          - generic [ref=e367]:
+            - paragraph [ref=e368]: Hülya Topal
+            - paragraph [ref=e369]: 1 yıl önce
+          - img [ref=e370]
+        - generic [ref=e375]: ★★★★★
+        - paragraph [ref=e376]: Fırıncı kahvaltısı, kuymak, baba usulü tost ve diğer kahvaltı çeşitleri birbirinden leziz ve mükemmel olup herkese tavsiye ederim. İlgilenen tüm çalışan arkadaşlara çok teşekkür ederiz. Temiz ve güler yüzlü hizmet için zemhery 😊
+      - generic [ref=e377]:
+        - generic [ref=e378]:
+          - generic [ref=e379]: YD
+          - generic [ref=e380]:
+            - paragraph [ref=e381]: Yasemin Dingiloğlu
+            - paragraph [ref=e382]: 1 yıl önce
+          - img [ref=e383]
+        - generic [ref=e388]: ★★★★★
+        - paragraph [ref=e389]: Ebru hanım, Dilan hanım ve tüm çalışanların emeğine, ellerine sağlık. Güzel sunumları ve ürünlerin lezzeti tazeliği nişanımıza gelen herkesi ve bizleri çok mutlu etti. Çok teşekkür ediyoruz.
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - generic [ref=e392]: ÖK
+          - generic [ref=e393]:
+            - paragraph [ref=e394]: Öykü Köksal
+            - paragraph [ref=e395]: 2 yıl önce
+          - img [ref=e396]
+        - generic [ref=e401]: ★★★★★
+        - paragraph [ref=e402]: Tatlılarına bayılıyoruz. Her gün gidip profiterol yemek istiyor canım. Tatlılar çok taze, ekip çok güler yüzlü ve ilgili. Gitmekten asla sıkılmayacağımız bir yer, teşekkür ederiz 💖
+      - generic [ref=e403]:
+        - generic [ref=e404]:
+          - generic [ref=e405]: Z
+          - generic [ref=e406]:
+            - paragraph [ref=e407]: Zehra
+            - paragraph [ref=e408]: 2 yıl önce
+          - img [ref=e409]
+        - generic [ref=e414]: ★★★★★
+        - paragraph [ref=e415]: Çok nezih düzenli beğendiğim bir mekan tatlıları pastalarını poğaçalarını tercih edip tavsiye de ediyorum. Fakat şunu belirtmek isterim ki orada bir beyefendi var aslında beyefendi demek de çok içimden gelmiyor ama 🙃 tezgahta duran birisi çok kaba müşteriye karşı ilgisiz özensiz bunu belirtmek isterim öyle bir yere bu tarz çalışan pek yakışmamış onun aksine de çok güleryüzlü samimi olan diğer çalışanlara çok teşekkür ediyorum :)
+      - generic [ref=e416]:
+        - generic [ref=e417]:
+          - generic [ref=e418]: SK
+          - generic [ref=e419]:
+            - paragraph [ref=e420]: Soner Karaca
+            - paragraph [ref=e421]: 6 ay önce
+          - img [ref=e422]
+        - generic [ref=e427]: ★★★★★
+        - paragraph [ref=e428]: Dördüncü hafta sonu oldu buraya geliyoruz. Lezzetleri çok güzel, kahvaltısı harika. Nurcan hanım, Süleyman bey, Canan hanım çok güleryüzlü ve ilgili. Başarılarınız daim olsun!
+      - generic [ref=e429]:
+        - generic [ref=e430]:
+          - generic [ref=e431]: MÇ
+          - generic [ref=e432]:
+            - paragraph [ref=e433]: Murat Çelik
+            - paragraph [ref=e434]: 2 yıl önce · Yerel Rehber
+          - img [ref=e435]
+        - generic [ref=e440]: ★★★★★
+        - paragraph [ref=e441]: Yaşamkent çevresinde pek çok bakery var, ama Zemhery hem fiyatı hem kalitesiyle kendini öne çıkarmış. Simit, ekmek, poğaça çok iyi; pastane kısmı da çok iyi. Dükkanın dizayn ve temizliği mükemmel. ♥
+      - generic [ref=e442]:
+        - generic [ref=e443]:
+          - generic [ref=e444]: OY
+          - generic [ref=e445]:
+            - paragraph [ref=e446]: Orhan Yılmaz
+            - paragraph [ref=e447]: 1 yıl önce
+          - img [ref=e448]
+        - generic [ref=e453]: ★★★★★
+        - paragraph [ref=e454]: Kesinlikle Ankara'daki favori yerim. Şerbetli tatlılarla aram yoktu ama fıstıklı baklavaları favorim oldu — kesinlikle deneyin. Her ürün yedikten sonra 10 dk şaşırma ve övme seansımız başlar. ❤️
+      - generic [ref=e455]:
+        - generic [ref=e456]:
+          - generic [ref=e457]: İK
+          - generic [ref=e458]:
+            - paragraph [ref=e459]: İsmail Küsmenoğlu
+            - paragraph [ref=e460]: 1 yıl önce · Yerel Rehber
+          - img [ref=e461]
+        - generic [ref=e466]: ★★★★★
+        - paragraph [ref=e467]: Su böreği nefis. Halis tereyağlı. Ankara'da yediğim en lezzetli su böreği idi. Kahvaltı fiyatları bulunduğu lokasyona göre ucuz. Yiyeceklerinde tuz oranı az, sağlık açısından olumlu. Personel güleryüzlü. Teşekkür ederim.
+      - generic [ref=e468]:
+        - generic [ref=e469]:
+          - generic [ref=e470]: HT
+          - generic [ref=e471]:
+            - paragraph [ref=e472]: Hülya Topal
+            - paragraph [ref=e473]: 1 yıl önce
+          - img [ref=e474]
+        - generic [ref=e479]: ★★★★★
+        - paragraph [ref=e480]: Fırıncı kahvaltısı, kuymak, baba usulü tost ve diğer kahvaltı çeşitleri birbirinden leziz ve mükemmel olup herkese tavsiye ederim. İlgilenen tüm çalışan arkadaşlara çok teşekkür ederiz. Temiz ve güler yüzlü hizmet için zemhery 😊
+      - generic [ref=e481]:
+        - generic [ref=e482]:
+          - generic [ref=e483]: YD
+          - generic [ref=e484]:
+            - paragraph [ref=e485]: Yasemin Dingiloğlu
+            - paragraph [ref=e486]: 1 yıl önce
+          - img [ref=e487]
+        - generic [ref=e492]: ★★★★★
+        - paragraph [ref=e493]: Ebru hanım, Dilan hanım ve tüm çalışanların emeğine, ellerine sağlık. Güzel sunumları ve ürünlerin lezzeti tazeliği nişanımıza gelen herkesi ve bizleri çok mutlu etti. Çok teşekkür ediyoruz.
+      - generic [ref=e494]:
+        - generic [ref=e495]:
+          - generic [ref=e496]: ÖK
+          - generic [ref=e497]:
+            - paragraph [ref=e498]: Öykü Köksal
+            - paragraph [ref=e499]: 2 yıl önce
+          - img [ref=e500]
+        - generic [ref=e505]: ★★★★★
+        - paragraph [ref=e506]: Tatlılarına bayılıyoruz. Her gün gidip profiterol yemek istiyor canım. Tatlılar çok taze, ekip çok güler yüzlü ve ilgili. Gitmekten asla sıkılmayacağımız bir yer, teşekkür ederiz 💖
+      - generic [ref=e507]:
+        - generic [ref=e508]:
+          - generic [ref=e509]: Z
+          - generic [ref=e510]:
+            - paragraph [ref=e511]: Zehra
+            - paragraph [ref=e512]: 2 yıl önce
+          - img [ref=e513]
+        - generic [ref=e518]: ★★★★★
+        - paragraph [ref=e519]: Çok nezih düzenli beğendiğim bir mekan tatlıları pastalarını poğaçalarını tercih edip tavsiye de ediyorum. Fakat şunu belirtmek isterim ki orada bir beyefendi var aslında beyefendi demek de çok içimden gelmiyor ama 🙃 tezgahta duran birisi çok kaba müşteriye karşı ilgisiz özensiz bunu belirtmek isterim öyle bir yere bu tarz çalışan pek yakışmamış onun aksine de çok güleryüzlü samimi olan diğer çalışanlara çok teşekkür ediyorum :)
+    - generic [ref=e520]:
+      - heading "BİZİ DEĞERLENDİRİN" [level=3] [ref=e521]
+      - link "GOOGLE'DA YORUM YAZ" [ref=e522] [cursor=pointer]:
+        - /url: https://www.google.com/maps/search/Zemhery+Bakery
+  - contentinfo [ref=e523]:
+    - generic [ref=e524]:
+      - generic [ref=e525]:
+        - heading "Keşfedin" [level=4] [ref=e526]
+        - link "Menü" [ref=e527] [cursor=pointer]:
+          - /url: menu.html
+        - link "Hakkımızda" [ref=e528] [cursor=pointer]:
+          - /url: hakkimizda.html
+        - link "İletişim" [ref=e529] [cursor=pointer]:
+          - /url: iletisim.html
+      - generic [ref=e530]:
+        - heading "Bizi Bulun" [level=4] [ref=e531]
+        - paragraph [ref=e532]:
+          - text: Alacaatlı Mah. Şht. Eren Bülbül Cad.
+          - text: No:42/B, Çankaya / Ankara
+        - link "Yol Tarifi Al →" [ref=e533] [cursor=pointer]:
+          - /url: https://www.google.com/maps/place/Zemhery+Bakery/@39.8543513,32.6541671,836m/data=!3m2!1e3!4b1!4m6!3m5!1s0x14d33fb50a0e69db:0x99aebe669d5a1b02!8m2!3d39.8543472!4d32.656742!16s%2Fg%2F11td9hfvmd
+      - generic [ref=e534]:
+        - heading "Çalışma Saatleri" [level=4] [ref=e535]
+        - paragraph [ref=e536]: Pazartesi — Pazar
+        - paragraph [ref=e537]: 07:00 — 19:00
+        - paragraph [ref=e538]: Her gün, taze.
+    - generic [ref=e539]:
+      - paragraph [ref=e540]: © 2026 Zemhery Bakery — Tüm Hakları Saklıdır.
+      - generic [ref=e541]:
+        - link "Instagram" [ref=e542] [cursor=pointer]:
+          - /url: https://instagram.com/zemherybakery
+        - link "Google" [ref=e543] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/Zemhery+Bakery
+        - link "Yemeksepeti" [ref=e544] [cursor=pointer]:
+          - /url: https://www.yemeksepeti.com/restaurant/ctfj/zemhery-bakery

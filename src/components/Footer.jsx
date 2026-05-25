@@ -1,16 +1,18 @@
+import { navigate, goToSection } from "../router.js";
 import "./Footer.css";
 
 const links = [
-  { id: "anasayfa", label: "Anasayfa" },
-  { id: "smoothies", label: "Smoothie'lerimiz" },
-  { id: "hakkimizda", label: "Hakkımızda" },
-  { id: "iletisim", label: "İletişim" },
+  { kind: "section", id: "anasayfa", label: "Anasayfa" },
+  { kind: "section", id: "smoothies", label: "Smoothie'lerimiz" },
+  { kind: "section", id: "hakkimizda", label: "Hakkımızda" },
+  { kind: "route", to: "/iletisim", label: "İletişim" },
 ];
 
 export default function Footer() {
-  const scrollTo = (e, id) => {
+  const handleClick = (e, l) => {
     e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    if (l.kind === "route") navigate(l.to);
+    else goToSection(l.id);
   };
 
   return (
@@ -25,7 +27,11 @@ export default function Footer() {
 
         <nav className="footer-nav" aria-label="Alt menü">
           {links.map((l) => (
-            <a key={l.id} href={`#${l.id}`} onClick={(e) => scrollTo(e, l.id)}>
+            <a
+              key={l.label}
+              href={l.kind === "route" ? l.to : `#${l.id}`}
+              onClick={(e) => handleClick(e, l)}
+            >
               {l.label}
             </a>
           ))}

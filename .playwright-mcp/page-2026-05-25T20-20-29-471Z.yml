@@ -1,0 +1,279 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Smoothify." [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation "Ana menü" [ref=e6]:
+        - link "Anasayfa" [ref=e7] [cursor=pointer]:
+          - /url: "#anasayfa"
+        - link "Smoothie'lerimiz" [ref=e8] [cursor=pointer]:
+          - /url: "#smoothies"
+        - link "Hakkımızda" [ref=e9] [cursor=pointer]:
+          - /url: "#hakkimizda"
+        - link "İletişim" [ref=e10] [cursor=pointer]:
+          - /url: /iletisim
+      - link "Bizi ziyaret et" [ref=e11] [cursor=pointer]:
+        - /url: /iletisim
+    - generic:
+      - link "Anasayfa" [ref=e12] [cursor=pointer]:
+        - /url: "#anasayfa"
+      - link "Smoothie'lerimiz" [ref=e13] [cursor=pointer]:
+        - /url: "#smoothies"
+      - link "Hakkımızda" [ref=e14] [cursor=pointer]:
+        - /url: "#hakkimizda"
+      - link "İletişim" [ref=e15] [cursor=pointer]:
+        - /url: /iletisim
+  - main [ref=e16]:
+    - generic [ref=e21]:
+      - paragraph [ref=e22]: Smoothify'ye hoş geldin
+      - heading "Taze smoothie'ler, gerçek bir mekan, tek tutku." [level=1] [ref=e23]:
+        - text: Taze smoothie'ler,
+        - text: gerçek bir mekan,
+        - text: tek tutku.
+      - paragraph [ref=e24]: Moda'nın kalbinde, taptaze meyvelerle hazırlanan sekiz imza smoothie. İçeri gel, atmosferi hisset, Smoothify deneyimini keşfet.
+      - generic [ref=e25]:
+        - link "Smoothie'leri keşfet →" [ref=e26] [cursor=pointer]:
+          - /url: "#smoothies"
+          - text: Smoothie'leri keşfet
+          - generic [ref=e27]: →
+        - link "Hakkımızda" [ref=e28] [cursor=pointer]:
+          - /url: "#hakkimizda"
+          - img [ref=e30]
+          - text: Hakkımızda
+    - generic [ref=e32]:
+      - button "Önceki smoothie" [ref=e37] [cursor=pointer]:
+        - img [ref=e38]
+      - button "Sonraki smoothie" [ref=e40] [cursor=pointer]:
+        - img [ref=e41]
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic:
+            - generic: içeriği gör
+            - img
+          - generic [ref=e46] [cursor=pointer]:
+            - img "SPRING" [ref=e47]
+            - img "SPRING içindekiler" [ref=e48]
+          - generic [ref=e50]:
+            - heading "SPRING" [level=2] [ref=e51]
+            - generic [ref=e52]: Smoothie
+        - paragraph [ref=e54]:
+          - generic [ref=e55]:
+            - text: Portakal
+            - generic [ref=e56]: +
+          - generic [ref=e57]: Çilek
+      - tablist "Smoothie seçimi" [ref=e58]:
+        - button "SPRING" [ref=e59] [cursor=pointer]
+        - button "DOPİNG" [ref=e60] [cursor=pointer]
+        - button "CHOCOFY" [ref=e61] [cursor=pointer]
+        - button "ALOHA" [ref=e62] [cursor=pointer]
+        - button "AÇAI" [ref=e63] [cursor=pointer]
+        - button "ACIDIC" [ref=e64] [cursor=pointer]
+        - button "LOST PARADISE" [ref=e65] [cursor=pointer]
+        - button "HAWAIIAN" [ref=e66] [cursor=pointer]
+      - link "Aşağı kaydır" [ref=e67] [cursor=pointer]:
+        - /url: "#smoothies"
+        - generic [ref=e68]: keşfet
+    - generic [ref=e72]:
+      - generic [ref=e73]:
+        - paragraph [ref=e74]: Smoothie'lerimiz
+        - heading "8 tarif, tek tutku" [level=2] [ref=e75]
+        - paragraph [ref=e76]: Her biri taze meyveyle, elde ve sipariş anında hazırlanır. Üstüne gel, içine ne girdiğini gör.
+      - generic [ref=e77]:
+        - article [ref=e78]:
+          - generic [ref=e79]:
+            - img "SPRING" [ref=e81]
+            - img "SPRING içindekiler" [ref=e82]
+          - generic [ref=e83]:
+            - heading "SPRING" [level=3] [ref=e84]
+            - paragraph [ref=e85]: Portakal + Çilek
+            - paragraph [ref=e86]: Güne taze bir başlangıç.
+            - list [ref=e87]:
+              - listitem [ref=e88]: Portakal
+              - listitem [ref=e89]: Çilek
+              - listitem [ref=e90]: Reyhan
+              - listitem [ref=e91]: Portakal Suyu
+              - listitem [ref=e92]: Smoothify Sos
+        - article [ref=e93]:
+          - generic [ref=e94]:
+            - img "DOPİNG" [ref=e96]
+            - img "DOPİNG içindekiler" [ref=e97]
+          - generic [ref=e98]:
+            - heading "DOPİNG" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Ceviz + Hurma
+            - paragraph [ref=e101]: Gün ortası enerji patlaması.
+            - list [ref=e102]:
+              - listitem [ref=e103]: Ceviz
+              - listitem [ref=e104]: Hurma
+              - listitem [ref=e105]: Tahin
+              - listitem [ref=e106]: Muz
+              - listitem [ref=e107]: Badem Sütü
+              - listitem [ref=e108]: Smoothify Sos
+        - article [ref=e109]:
+          - generic [ref=e110]:
+            - img "CHOCOFY" [ref=e112]
+            - img "CHOCOFY içindekiler" [ref=e113]
+          - generic [ref=e114]:
+            - heading "CHOCOFY" [level=3] [ref=e115]
+            - paragraph [ref=e116]: Çikolata + Muz
+            - paragraph [ref=e117]: Tatlı krizine sağlıklı cevap.
+            - list [ref=e118]:
+              - listitem [ref=e119]: Tahta Çikolata
+              - listitem [ref=e120]: Muz
+              - listitem [ref=e121]: Bisküvi
+              - listitem [ref=e122]: Badem Sütü
+              - listitem [ref=e123]: Smoothify Sos
+        - article [ref=e124]:
+          - generic [ref=e125]:
+            - img "ALOHA" [ref=e127]
+            - img "ALOHA içindekiler" [ref=e128]
+          - generic [ref=e129]:
+            - heading "ALOHA" [level=3] [ref=e130]
+            - paragraph [ref=e131]: Karpuz + Çilek
+            - paragraph [ref=e132]: Yaz, bir bardağa sığdı.
+            - list [ref=e133]:
+              - listitem [ref=e134]: Karpuz
+              - listitem [ref=e135]: Çilek
+              - listitem [ref=e136]: Limonata
+              - listitem [ref=e137]: Smoothify Sos
+        - article [ref=e138]:
+          - generic [ref=e139]:
+            - img "AÇAI" [ref=e141]
+            - img "AÇAI içindekiler" [ref=e142]
+          - generic [ref=e143]:
+            - heading "AÇAI" [level=3] [ref=e144]
+            - paragraph [ref=e145]: Karadut + Yaban Mersini
+            - paragraph [ref=e146]: Antioksidan dolu mor güç.
+            - list [ref=e147]:
+              - listitem [ref=e148]: Karadut
+              - listitem [ref=e149]: Yaban Mersini
+              - listitem [ref=e150]: Açai Tozu
+              - listitem [ref=e151]: Badem Sütü
+              - listitem [ref=e152]: Smoothify Sos
+        - article [ref=e153]:
+          - generic [ref=e154]:
+            - img "ACIDIC" [ref=e156]
+            - img "ACIDIC içindekiler" [ref=e157]
+          - generic [ref=e158]:
+            - heading "ACIDIC" [level=3] [ref=e159]
+            - paragraph [ref=e160]: Nane + Salatalık
+            - paragraph [ref=e161]: Buz gibi ferahlık.
+            - list [ref=e162]:
+              - listitem [ref=e163]: Nane
+              - listitem [ref=e164]: Salatalık
+              - listitem [ref=e165]: Limon Suyu
+              - listitem [ref=e166]: Limonata
+              - listitem [ref=e167]: Smoothify Sos
+        - article [ref=e168]:
+          - generic [ref=e169]:
+            - img "LOST PARADISE" [ref=e171]
+            - img "LOST PARADISE içindekiler" [ref=e172]
+          - generic [ref=e173]:
+            - heading "LOST PARADISE" [level=3] [ref=e174]
+            - paragraph [ref=e175]: Karadut + Böğürtlen
+            - paragraph [ref=e176]: Kaybolmaya değer bir tat.
+            - list [ref=e177]:
+              - listitem [ref=e178]: Karadut
+              - listitem [ref=e179]: Yaban Mersini
+              - listitem [ref=e180]: Böğürtlen
+              - listitem [ref=e181]: Limonata
+              - listitem [ref=e182]: Smoothify Sos
+        - article [ref=e183]:
+          - generic [ref=e184]:
+            - img "HAWAIIAN" [ref=e186]
+            - img "HAWAIIAN içindekiler" [ref=e187]
+          - generic [ref=e188]:
+            - heading "HAWAIIAN" [level=3] [ref=e189]
+            - paragraph [ref=e190]: Mango + Ananas
+            - paragraph [ref=e191]: Tropik bir kaçamak.
+            - list [ref=e192]:
+              - listitem [ref=e193]: Mango
+              - listitem [ref=e194]: Ananas
+              - listitem [ref=e195]: Ananas Suyu
+              - listitem [ref=e196]: Smoothify Sos
+    - generic [ref=e198]:
+      - generic [ref=e199]:
+        - paragraph [ref=e200]: Hakkımızda
+        - heading "Biz bir kafe değiliz. Bir smoothie takıntısıyız." [level=2] [ref=e201]:
+          - text: Biz bir kafe değiliz.
+          - text: Bir smoothie takıntısıyız.
+        - paragraph [ref=e202]: "Smoothify, tek bir fikirle başladı: meyveyi en taze, en eğlenceli ve en dürüst haliyle bardağa koymak. O yüzden burada kahve, tost ya da uzun bir menü bulamazsın — sadece sekiz iyi düşünülmüş smoothie."
+        - generic [ref=e203]:
+          - generic [ref=e206]:
+            - heading "Sadece smoothie" [level=3] [ref=e207]
+            - paragraph [ref=e208]: "Menüyü dağıtmadık. Tek işimiz var: şehrin en iyi smoothie'sini yapmak."
+          - generic [ref=e211]:
+            - heading "Taze ve dürüst" [level=3] [ref=e212]
+            - paragraph [ref=e213]: Konserve yok, toz aroma yok. Bardağa ne girdiğini üstüne gelince görüyorsun.
+          - generic [ref=e216]:
+            - heading "Anında, elde" [level=3] [ref=e217]
+            - paragraph [ref=e218]: Sipariş gelince blender çalışır. Önceden hazırlanmış, bekleyen smoothie satmıyoruz.
+        - generic [ref=e219]:
+          - generic [ref=e220]:
+            - generic [ref=e221]: "8"
+            - generic [ref=e222]: imza tarif
+          - generic [ref=e223]:
+            - generic [ref=e224]: "%100"
+            - generic [ref=e225]: gerçek meyve
+          - generic [ref=e226]:
+            - generic [ref=e227]: "0"
+            - generic [ref=e228]: katkı maddesi
+          - generic [ref=e229]:
+            - generic [ref=e230]: 60sn
+            - generic [ref=e231]: içinde elde hazır
+      - generic [ref=e234]: taze • el yapımı • şehrin enerjisi
+    - generic [ref=e236]:
+      - generic [ref=e237]:
+        - paragraph [ref=e238]: İletişim
+        - heading "Uğra, bir bardak iç" [level=2] [ref=e239]
+        - paragraph [ref=e240]: Sipariş, etkinlik ya da sadece selam vermek için — kapımız (ve blender'ımız) hep açık.
+        - list [ref=e241]:
+          - listitem [ref=e242]:
+            - generic [ref=e243]: Adres
+            - generic [ref=e244]: Moda Cad. No:12, Kadıköy / İstanbul
+          - listitem [ref=e245]:
+            - generic [ref=e246]: Saatler
+            - generic [ref=e247]: Her gün 09:00 – 22:00
+          - listitem [ref=e248]:
+            - generic [ref=e249]: Telefon
+            - generic [ref=e250]: +90 555 000 00 00
+          - listitem [ref=e251]:
+            - generic [ref=e252]: E-posta
+            - generic [ref=e253]: merhaba@smoothify.co
+        - generic [ref=e254]:
+          - link "Instagram" [ref=e255] [cursor=pointer]:
+            - /url: "#iletisim"
+          - link "TikTok" [ref=e256] [cursor=pointer]:
+            - /url: "#iletisim"
+          - link "X" [ref=e257] [cursor=pointer]:
+            - /url: "#iletisim"
+      - generic [ref=e259]:
+        - generic [ref=e260]:
+          - generic [ref=e261]: Adın
+          - textbox "Adın" [ref=e262]:
+            - /placeholder: Adın soyadın
+        - generic [ref=e263]:
+          - generic [ref=e264]: E-posta
+          - textbox "E-posta" [ref=e265]:
+            - /placeholder: seninadin@mail.com
+        - generic [ref=e266]:
+          - generic [ref=e267]: Mesajın
+          - textbox "Mesajın" [ref=e268]:
+            - /placeholder: Bize ne sormak istersin?
+        - button "Gönder" [ref=e269] [cursor=pointer]
+  - contentinfo [ref=e270]:
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - generic [ref=e273]: Smoothify.
+        - paragraph [ref=e274]: Şehrin en taze sekiz smoothie'si. Başka bir şey satmıyoruz.
+      - navigation "Alt menü" [ref=e275]:
+        - link "Anasayfa" [ref=e276] [cursor=pointer]:
+          - /url: "#anasayfa"
+        - link "Smoothie'lerimiz" [ref=e277] [cursor=pointer]:
+          - /url: "#smoothies"
+        - link "Hakkımızda" [ref=e278] [cursor=pointer]:
+          - /url: "#hakkimizda"
+        - link "İletişim" [ref=e279] [cursor=pointer]:
+          - /url: /iletisim
+    - generic [ref=e280]:
+      - generic [ref=e281]: © 2026 Smoothify
+      - generic [ref=e282]: Taze sıkılmış kodla yapıldı.

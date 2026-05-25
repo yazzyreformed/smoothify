@@ -1,0 +1,9 @@
+[     523ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     559ms] [LOG] [HMR] connected @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     575ms] [WARNING] Image with src "/logo.jpg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     579ms] [WARNING] Image with src "/images/hero1.png" is using quality "95" which is not configured in images.qualities [75]. Please update your config to [75, 95].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     630ms] [WARNING] Image with src "/images/kategori/dry-aged-steak.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     853ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431
+[     924ms] [LOG] [Fast Refresh] done in 171ms @ http://localhost:3202/_next/static/chunks/node_modules_next_dist_115brz8._.js:2431

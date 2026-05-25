@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
+import { navigate, goToSection, useRoute } from "../router.js";
 import "./Navbar.css";
 
 const links = [
-  { id: "anasayfa", label: "Anasayfa" },
-  { id: "smoothies", label: "Smoothie'lerimiz" },
-  { id: "hakkimizda", label: "Hakkımızda" },
-  { id: "iletisim", label: "İletişim" },
+  { kind: "section", id: "anasayfa", label: "Anasayfa" },
+  { kind: "route", to: "/hakkimizda", label: "Hakkımızda" },
+  { kind: "route", to: "/iletisim", label: "İletişim" },
 ];
 
 export default function Navbar() {
+  const path = useRoute();
+  const onHome = path === "/";
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState("anasayfa");
+  const [activeSection, setActiveSection] = useState("anasayfa");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -20,36 +22,50 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // scroll-spy
+  // scroll-spy (homepage only)
   useEffect(() => {
+    if (!onHome) return;
     const sections = links
+      .filter((l) => l.kind === "section")
       .map((l) => document.getElementById(l.id))
       .filter(Boolean);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
-          if (e.isIntersecting) setActive(e.target.id);
+          if (e.isIntersecting) setActiveSection(e.target.id);
         });
       },
       { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
     );
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
-  }, []);
+  }, [onHome]);
 
-  const handleClick = (e, id) => {
+  const isActive = (l) =>
+    l.kind === "route"
+      ? path === l.to || path === l.to + "/"
+      : onHome && activeSection === l.id;
+
+  const handleClick = (e, l) => {
     e.preventDefault();
     setOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    if (l.kind === "route") navigate(l.to);
+    else goToSection(l.id);
   };
 
+  const solid = scrolled || !onHome;
+
   return (
-    <header className={"nav" + (scrolled ? " scrolled" : "") + (open ? " open" : "")}>
+    <header className={"nav" + (solid ? " scrolled" : "") + (open ? " open" : "")}>
       <div className="nav-inner">
         <a
-          href="#anasayfa"
+          href="/"
           className="brand"
-          onClick={(e) => handleClick(e, "anasayfa")}
+          onClick={(e) => {
+            e.preventDefault();
+            setOpen(false);
+            onHome ? goToSection("anasayfa") : navigate("/");
+          }}
         >
           Smoothify<span className="brand-dot">.</span>
         </a>
@@ -57,10 +73,10 @@ export default function Navbar() {
         <nav className="nav-links" aria-label="Ana menü">
           {links.map((l) => (
             <a
-              key={l.id}
-              href={`#${l.id}`}
-              className={active === l.id ? "active" : ""}
-              onClick={(e) => handleClick(e, l.id)}
+              key={l.label}
+              href={l.kind === "route" ? l.to : `#${l.id}`}
+              className={isActive(l) ? "active" : ""}
+              onClick={(e) => handleClick(e, l)}
             >
               {l.label}
             </a>
@@ -68,9 +84,13 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#iletisim"
+          href="/iletisim"
           className="nav-cta"
-          onClick={(e) => handleClick(e, "iletisim")}
+          onClick={(e) => {
+            e.preventDefault();
+            setOpen(false);
+            navigate("/iletisim");
+          }}
         >
           Bizi ziyaret et
         </a>
@@ -90,10 +110,10 @@ export default function Navbar() {
       <div className="nav-mobile">
         {links.map((l) => (
           <a
-            key={l.id}
-            href={`#${l.id}`}
-            className={active === l.id ? "active" : ""}
-            onClick={(e) => handleClick(e, l.id)}
+            key={l.label}
+            href={l.kind === "route" ? l.to : `#${l.id}`}
+            className={isActive(l) ? "active" : ""}
+            onClick={(e) => handleClick(e, l)}
           >
             {l.label}
           </a>

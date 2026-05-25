@@ -95,7 +95,7 @@ export default function SmoothieShowcase() {
       startX = null;
       startY = null;
     };
-    const el = document.getElementById("anasayfa");
+    const el = document.getElementById("showcase");
     el?.addEventListener("touchstart", onStart, { passive: true });
     el?.addEventListener("touchend", onEnd, { passive: true });
     return () => {
@@ -116,7 +116,7 @@ export default function SmoothieShowcase() {
 
   return (
     <section
-      id="anasayfa"
+      id="showcase"
       className="showcase"
       style={sectionStyle}
       onMouseEnter={() => (pausedRef.current = true)}

@@ -1,0 +1,167 @@
+.photo-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ph-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("/hero.png") center center / cover no-repeat;
+}
+
+/* pink -> purple wash, heavier on the right so white text pops */
+.ph-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      102deg,
+      rgba(255, 138, 170, 0) 0%,
+      rgba(255, 130, 175, 0.18) 28%,
+      rgba(224, 120, 200, 0.62) 50%,
+      rgba(185, 110, 224, 0.85) 74%,
+      rgba(166, 104, 230, 0.92) 100%
+    ),
+    linear-gradient(180deg, rgba(120, 70, 150, 0.16), rgba(120, 70, 150, 0.04));
+}
+
+.ph-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 clamp(22px, 5vw, 56px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ph-content {
+  width: min(620px, 92%);
+  color: #fff;
+}
+
+.ph-eyebrow {
+  margin: 0 0 14px;
+  font-size: clamp(16px, 1.5vw, 21px);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 2px 14px rgba(80, 30, 90, 0.25);
+}
+
+.ph-title {
+  margin: 0;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-size: clamp(52px, 6.4vw, 104px);
+  line-height: 0.96;
+  letter-spacing: 0.01em;
+  text-shadow: 0 8px 36px rgba(70, 25, 80, 0.32);
+}
+
+.ph-lead {
+  margin: 22px 0 0;
+  max-width: 46ch;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 2px 16px rgba(70, 25, 80, 0.28);
+}
+
+.ph-actions {
+  margin-top: clamp(26px, 3.4vh, 40px);
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2vw, 30px);
+  flex-wrap: wrap;
+}
+
+.ph-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 30px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: clamp(15px, 1.1vw, 17px);
+  color: #fff;
+  background: var(--brand-grad);
+  box-shadow: 0 16px 38px rgba(214, 60, 130, 0.42);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.ph-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 46px rgba(214, 60, 130, 0.52);
+}
+.ph-cta-arrow {
+  transition: transform 0.25s ease;
+}
+.ph-cta:hover .ph-cta-arrow {
+  transform: translateX(5px);
+}
+
+.ph-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  font-size: clamp(15px, 1.1vw, 17px);
+  color: #fff;
+  transition: opacity 0.25s ease;
+}
+.ph-play:hover {
+  opacity: 0.85;
+}
+.ph-play-circle {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+  padding-left: 3px;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.ph-play:hover .ph-play-circle {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 900px) {
+  .ph-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(90, 45, 120, 0.35) 0%,
+        rgba(150, 90, 180, 0.55) 100%
+      ),
+      linear-gradient(
+        102deg,
+        rgba(214, 120, 205, 0.3) 0%,
+        rgba(168, 108, 228, 0.6) 100%
+      );
+  }
+  .ph-inner {
+    justify-content: center;
+  }
+  .ph-content {
+    width: 100%;
+    text-align: center;
+  }
+  .ph-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ph-actions {
+    justify-content: center;
+  }
+}

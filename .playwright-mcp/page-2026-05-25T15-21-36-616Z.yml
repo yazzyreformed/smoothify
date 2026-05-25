@@ -1,0 +1,903 @@
+- generic [active] [ref=e1]:
+  - img "Etlik Yayla Kasabı" [ref=e4]
+  - generic:
+    - navigation:
+      - list:
+        - listitem:
+          - link "Anasayfa":
+            - /url: /
+            - generic: Anasayfa
+        - listitem:
+          - link "Katalog":
+            - /url: /katalog
+            - generic: Katalog
+      - generic:
+        - link "Etlik Yayla Kasabı":
+          - /url: /
+          - generic:
+            - generic:
+              - img "Etlik Yayla Kasabı"
+            - generic:
+              - paragraph: Etlik
+              - paragraph: Yayla
+              - paragraph: Kasabı
+            - generic: ETLİK YAYLA KASABI
+      - generic:
+        - list:
+          - listitem:
+            - link "Et Rehberi":
+              - /url: /et-rehberi
+              - generic: Et Rehberi
+          - listitem:
+            - link "Hakkımızda":
+              - /url: /hakkimizda
+              - generic: Hakkımızda
+          - listitem:
+            - link "İletişim":
+              - /url: /iletisim
+              - generic: İletişim
+        - link "Sipariş Ver":
+          - /url: https://www.yemeksepeti.com/shop/uowf/etlik-yayla-kasabi-and-mandira
+    - main:
+      - generic:
+        - img "Etlik Yayla Kasabı"
+        - generic:
+          - paragraph: Ankara / Etlik
+          - heading "Ankara'nın En Taze Eti" [level=1]
+          - paragraph: Günlük taze, özel kesim, hijyen garantili.
+        - generic:
+          - link "Kataloğu Gör":
+            - /url: /katalog
+            - generic: Kataloğu Gör
+      - generic:
+        - generic:
+          - generic:
+            - img "Ödül"
+          - generic:
+            - generic:
+              - generic:
+                - heading "Ankara'da Yılın Kasabı" [level=2]
+            - generic:
+              - paragraph: Her sabah taze gelen etler, ustaca kesim ve hijyen garantisiyle sofranıza geliyor. Kalite bizim önceliğimiz.
+      - generic:
+        - generic: Keşfet
+      - generic:
+        - generic:
+          - generic:
+            - button "Kırmızı Et"
+            - generic:
+              - generic: E
+            - button "Beyaz Et"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img "Dry Aged & Premium Steak"
+            - generic:
+              - paragraph: Kırmızı Et
+              - heading "Dry Aged & Premium Steak" [level=3]
+              - paragraph: Kasabın soğuk hücrelerinde günlerce dinlendirilen etler, lif lif yumuşarken içindeki tüm lezzeti derinleştirir. T-Bone, Dallas ve Antrikot — bıçak değer değmez fark edilir bu fark.
+              - paragraph: Özel bir akşam için sofranızı kurmadan önce bir kez deneyin. Geri dönüşü olmayan bir lezzet bu.
+        - generic:
+          - generic:
+            - button "Dry Aged & Steak"
+            - button "Mangal Ateşi"
+            - button "Köfte & Sucuk"
+            - button "Ev Yemeklik"
+      - generic:
+        - generic:
+          - paragraph: Mutfaktan Sofraya
+          - heading "Ellerin Anlattığı Lezzet" [level=2]
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: “Et, ustalığın ve titizliğin buluştuğu noktada hazırlanır.”
+            - generic:
+              - generic:
+                - paragraph: “Doğru kesim, doğru lezzet demektir.”
+            - generic:
+              - generic:
+                - paragraph: “Aynı et, farklı elde başka hikâye yazar.”
+            - generic:
+              - generic:
+                - paragraph: “Taze et, saygının en saf halidir.”
+            - generic:
+              - generic:
+                - paragraph: “Her kesim, yılların deneyimini taşır.”
+            - generic:
+              - generic:
+                - paragraph: “Kalite, görünmeyende gizlidir.”
+            - generic:
+              - generic:
+                - paragraph: “Lezzet bir sabah başlar, ustalıkla olgunlaşır.”
+            - generic:
+              - generic:
+                - paragraph: “En iyi et, en iyi eller tarafından seçilir.”
+            - generic:
+              - generic:
+                - paragraph: “Sofranızdaki her dilim, bir özenin ürünüdür.”
+            - generic:
+              - generic:
+                - paragraph: “Et, ustalığın ve titizliğin buluştuğu noktada hazırlanır.”
+            - generic:
+              - generic:
+                - paragraph: “Doğru kesim, doğru lezzet demektir.”
+            - generic:
+              - generic:
+                - paragraph: “Aynı et, farklı elde başka hikâye yazar.”
+            - generic:
+              - generic:
+                - paragraph: “Taze et, saygının en saf halidir.”
+            - generic:
+              - generic:
+                - paragraph: “Her kesim, yılların deneyimini taşır.”
+            - generic:
+              - generic:
+                - paragraph: “Kalite, görünmeyende gizlidir.”
+            - generic:
+              - generic:
+                - paragraph: “Lezzet bir sabah başlar, ustalıkla olgunlaşır.”
+            - generic:
+              - generic:
+                - paragraph: “En iyi et, en iyi eller tarafından seçilir.”
+            - generic:
+              - generic:
+                - paragraph: “Sofranızdaki her dilim, bir özenin ürünüdür.”
+            - generic:
+              - generic:
+                - paragraph: “Et, ustalığın ve titizliğin buluştuğu noktada hazırlanır.”
+            - generic:
+              - generic:
+                - paragraph: “Doğru kesim, doğru lezzet demektir.”
+            - generic:
+              - generic:
+                - paragraph: “Aynı et, farklı elde başka hikâye yazar.”
+            - generic:
+              - generic:
+                - paragraph: “Taze et, saygının en saf halidir.”
+            - generic:
+              - generic:
+                - paragraph: “Her kesim, yılların deneyimini taşır.”
+            - generic:
+              - generic:
+                - paragraph: “Kalite, görünmeyende gizlidir.”
+            - generic:
+              - generic:
+                - paragraph: “Lezzet bir sabah başlar, ustalıkla olgunlaşır.”
+            - generic:
+              - generic:
+                - paragraph: “En iyi et, en iyi eller tarafından seçilir.”
+            - generic:
+              - generic:
+                - paragraph: “Sofranızdaki her dilim, bir özenin ürünüdür.”
+        - generic:
+          - button
+          - button
+          - button
+          - button
+          - button
+          - button
+          - button
+          - button
+          - button
+      - generic:
+        - generic:
+          - paragraph: Etlik Yayla Kasabı
+          - heading "Taze Et, Doğru Kesim" [level=2]:
+            - text: Taze Et,
+            - emphasis: Doğru Kesim
+          - link "Sipariş Ver":
+            - /url: https://www.yemeksepeti.com/shop/uowf/etlik-yayla-kasabi-and-mandira
+      - generic:
+        - generic:
+          - heading "Misafirlerimizin Deneyimleri" [level=2]
+          - generic:
+            - img
+            - generic: Google Yorumları
+            - generic:
+              - img
+              - img
+              - img
+              - img
+              - img
+            - generic: "5.0"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÇ
+                  - generic:
+                    - paragraph: Fatih Ç.
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Evime yakın olmamasına rağmen uzun süredir et ve et ürünlerini tercih ettiğim kasap. Özellikle temizliği ve çalışanlarının titizliği sebebiyle kendilerini tercih ediyorum. Yaz kış her türlü et ürününü bulabileceğiniz bir işletme. Daha bu güne kadar şunu da aldım ve memnun kalmadım diyeceğim bir alışverişim olmadı.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: SÜ
+                  - generic:
+                    - paragraph: Salih Ünal
+                    - paragraph: 5 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri daima taze ve kaliteli. Çalışanlar işinin ehli. İstediğiniz türde etleri hazır olarak bulabilirsiniz. Ben özellikle kıyma, mangallık et konusunda Ankara'nın diğer ucunda olsam buraya gider alışverişimi yaparım. Bugüne kadar misafirlerime beni asla mahcup etmeyen bu mekanı kaliteli et arayanlara tavsiye ediyorum.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: KS
+                  - generic:
+                    - paragraph: Kuzey Suhan
+                    - paragraph: 4 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: 10 yıldır müşterileriyim. Bir gün kötü malzeme veya kötü davranış görmedim. 2 çocuğumu buranın etleriyle büyüttüm ve büyütüyorum. Aynen devam, ellerinize sağlık.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÖ
+                  - generic:
+                    - paragraph: Fırat Özen
+                    - paragraph: 9 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Kuyumcu vitrini gibi dizilmiş tertemiz ve en kaliteli etler sunuyorlar. Son derece makul fiyatlara ve muhteşem bir hizmet ile.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: EE
+                  - generic:
+                    - paragraph: Ersoy Erdal
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yok yok.. Aradığınız her şeyi hem çok taze hem çok güvenilir olarak bulabileceğiniz bir yer. Bırakın süslü püslü market reyonlarını ve bir uğrayın bence. Bir şey almadan çıkamazsınız zaten.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AE
+                  - generic:
+                    - paragraph: Ayşegül Esen Osso
+                    - paragraph: 2 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Bulunduğum bölgede zırh kıyması veya dolmalık kıyma hazırlayan kasap bulmak zor. Tavsiye üzerine gittim. Mekan temizdi, personeller güler yüzlüydü. Ayrıca Adana kebabını orijinal tarif ile hazırlamışlardı. Ürünlerinin lezzetini beğendim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: İA
+                  - generic:
+                    - paragraph: İrem Artaç
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Çok kaliteli ve temiz bir kasap; ailecek yıllardır oradan alışveriş yapıyoruz. Çalışanlar çok güler yüzlü ve ilgili. Herkese tavsiye ederim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: E
+                  - generic:
+                    - paragraph: ExrockS
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Et konusunda gayet başarılılar; kaliteli, temiz ürünler, iyi bir dekora sahip dükkan. Kasap olma konusunda başarılı bir yer, çalışanları işini düzgün yapıyorlar.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: MA
+                  - generic:
+                    - paragraph: Mustafa Altınbaş
+                    - paragraph: 3 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri kaliteli, yumuşak ve taze. İstediğimiz ölçüde et veriyor, yağ katmıyor, bağ doku katmıyor. Kemikleri istediğimiz gibi küçük kırıyor. Fiyatlar makul.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AA
+                  - generic:
+                    - paragraph: Arda Acay
+                    - paragraph: 4 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Hizmet çok iyi, çalışanlar gayet güler yüzlü insanlar. Ayrıca etleri çok kaliteli; özellikle mangala gideceğiniz zaman etleri buradan almayı unutmayın. Köfte sevenler için gayet lezzetli köfteleri var.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: HD
+                  - generic:
+                    - paragraph: Halis Dilmeç
+                    - paragraph: 5 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yayla Kasap, her zaman güvenle et ve tavuk aldığım tek adres diyebilirim. Temiz ve hızlı hizmetin yanında müşteri ile ilişkiler samimiyet ve saygı sınırları içerisinde yürütülüyor.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÇ
+                  - generic:
+                    - paragraph: Fatih Ç.
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Evime yakın olmamasına rağmen uzun süredir et ve et ürünlerini tercih ettiğim kasap. Özellikle temizliği ve çalışanlarının titizliği sebebiyle kendilerini tercih ediyorum. Yaz kış her türlü et ürününü bulabileceğiniz bir işletme. Daha bu güne kadar şunu da aldım ve memnun kalmadım diyeceğim bir alışverişim olmadı.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: SÜ
+                  - generic:
+                    - paragraph: Salih Ünal
+                    - paragraph: 5 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri daima taze ve kaliteli. Çalışanlar işinin ehli. İstediğiniz türde etleri hazır olarak bulabilirsiniz. Ben özellikle kıyma, mangallık et konusunda Ankara'nın diğer ucunda olsam buraya gider alışverişimi yaparım. Bugüne kadar misafirlerime beni asla mahcup etmeyen bu mekanı kaliteli et arayanlara tavsiye ediyorum.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: KS
+                  - generic:
+                    - paragraph: Kuzey Suhan
+                    - paragraph: 4 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: 10 yıldır müşterileriyim. Bir gün kötü malzeme veya kötü davranış görmedim. 2 çocuğumu buranın etleriyle büyüttüm ve büyütüyorum. Aynen devam, ellerinize sağlık.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÖ
+                  - generic:
+                    - paragraph: Fırat Özen
+                    - paragraph: 9 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Kuyumcu vitrini gibi dizilmiş tertemiz ve en kaliteli etler sunuyorlar. Son derece makul fiyatlara ve muhteşem bir hizmet ile.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: EE
+                  - generic:
+                    - paragraph: Ersoy Erdal
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yok yok.. Aradığınız her şeyi hem çok taze hem çok güvenilir olarak bulabileceğiniz bir yer. Bırakın süslü püslü market reyonlarını ve bir uğrayın bence. Bir şey almadan çıkamazsınız zaten.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AE
+                  - generic:
+                    - paragraph: Ayşegül Esen Osso
+                    - paragraph: 2 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Bulunduğum bölgede zırh kıyması veya dolmalık kıyma hazırlayan kasap bulmak zor. Tavsiye üzerine gittim. Mekan temizdi, personeller güler yüzlüydü. Ayrıca Adana kebabını orijinal tarif ile hazırlamışlardı. Ürünlerinin lezzetini beğendim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: İA
+                  - generic:
+                    - paragraph: İrem Artaç
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Çok kaliteli ve temiz bir kasap; ailecek yıllardır oradan alışveriş yapıyoruz. Çalışanlar çok güler yüzlü ve ilgili. Herkese tavsiye ederim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: E
+                  - generic:
+                    - paragraph: ExrockS
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Et konusunda gayet başarılılar; kaliteli, temiz ürünler, iyi bir dekora sahip dükkan. Kasap olma konusunda başarılı bir yer, çalışanları işini düzgün yapıyorlar.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: MA
+                  - generic:
+                    - paragraph: Mustafa Altınbaş
+                    - paragraph: 3 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri kaliteli, yumuşak ve taze. İstediğimiz ölçüde et veriyor, yağ katmıyor, bağ doku katmıyor. Kemikleri istediğimiz gibi küçük kırıyor. Fiyatlar makul.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AA
+                  - generic:
+                    - paragraph: Arda Acay
+                    - paragraph: 4 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Hizmet çok iyi, çalışanlar gayet güler yüzlü insanlar. Ayrıca etleri çok kaliteli; özellikle mangala gideceğiniz zaman etleri buradan almayı unutmayın. Köfte sevenler için gayet lezzetli köfteleri var.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: HD
+                  - generic:
+                    - paragraph: Halis Dilmeç
+                    - paragraph: 5 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yayla Kasap, her zaman güvenle et ve tavuk aldığım tek adres diyebilirim. Temiz ve hızlı hizmetin yanında müşteri ile ilişkiler samimiyet ve saygı sınırları içerisinde yürütülüyor.
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: HD
+                  - generic:
+                    - paragraph: Halis Dilmeç
+                    - paragraph: 5 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yayla Kasap, her zaman güvenle et ve tavuk aldığım tek adres diyebilirim. Temiz ve hızlı hizmetin yanında müşteri ile ilişkiler samimiyet ve saygı sınırları içerisinde yürütülüyor.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AA
+                  - generic:
+                    - paragraph: Arda Acay
+                    - paragraph: 4 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Hizmet çok iyi, çalışanlar gayet güler yüzlü insanlar. Ayrıca etleri çok kaliteli; özellikle mangala gideceğiniz zaman etleri buradan almayı unutmayın. Köfte sevenler için gayet lezzetli köfteleri var.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: MA
+                  - generic:
+                    - paragraph: Mustafa Altınbaş
+                    - paragraph: 3 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri kaliteli, yumuşak ve taze. İstediğimiz ölçüde et veriyor, yağ katmıyor, bağ doku katmıyor. Kemikleri istediğimiz gibi küçük kırıyor. Fiyatlar makul.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: E
+                  - generic:
+                    - paragraph: ExrockS
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Et konusunda gayet başarılılar; kaliteli, temiz ürünler, iyi bir dekora sahip dükkan. Kasap olma konusunda başarılı bir yer, çalışanları işini düzgün yapıyorlar.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: İA
+                  - generic:
+                    - paragraph: İrem Artaç
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Çok kaliteli ve temiz bir kasap; ailecek yıllardır oradan alışveriş yapıyoruz. Çalışanlar çok güler yüzlü ve ilgili. Herkese tavsiye ederim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AE
+                  - generic:
+                    - paragraph: Ayşegül Esen Osso
+                    - paragraph: 2 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Bulunduğum bölgede zırh kıyması veya dolmalık kıyma hazırlayan kasap bulmak zor. Tavsiye üzerine gittim. Mekan temizdi, personeller güler yüzlüydü. Ayrıca Adana kebabını orijinal tarif ile hazırlamışlardı. Ürünlerinin lezzetini beğendim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: EE
+                  - generic:
+                    - paragraph: Ersoy Erdal
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yok yok.. Aradığınız her şeyi hem çok taze hem çok güvenilir olarak bulabileceğiniz bir yer. Bırakın süslü püslü market reyonlarını ve bir uğrayın bence. Bir şey almadan çıkamazsınız zaten.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÖ
+                  - generic:
+                    - paragraph: Fırat Özen
+                    - paragraph: 9 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Kuyumcu vitrini gibi dizilmiş tertemiz ve en kaliteli etler sunuyorlar. Son derece makul fiyatlara ve muhteşem bir hizmet ile.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: KS
+                  - generic:
+                    - paragraph: Kuzey Suhan
+                    - paragraph: 4 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: 10 yıldır müşterileriyim. Bir gün kötü malzeme veya kötü davranış görmedim. 2 çocuğumu buranın etleriyle büyüttüm ve büyütüyorum. Aynen devam, ellerinize sağlık.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: SÜ
+                  - generic:
+                    - paragraph: Salih Ünal
+                    - paragraph: 5 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri daima taze ve kaliteli. Çalışanlar işinin ehli. İstediğiniz türde etleri hazır olarak bulabilirsiniz. Ben özellikle kıyma, mangallık et konusunda Ankara'nın diğer ucunda olsam buraya gider alışverişimi yaparım. Bugüne kadar misafirlerime beni asla mahcup etmeyen bu mekanı kaliteli et arayanlara tavsiye ediyorum.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÇ
+                  - generic:
+                    - paragraph: Fatih Ç.
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Evime yakın olmamasına rağmen uzun süredir et ve et ürünlerini tercih ettiğim kasap. Özellikle temizliği ve çalışanlarının titizliği sebebiyle kendilerini tercih ediyorum. Yaz kış her türlü et ürününü bulabileceğiniz bir işletme. Daha bu güne kadar şunu da aldım ve memnun kalmadım diyeceğim bir alışverişim olmadı.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: HD
+                  - generic:
+                    - paragraph: Halis Dilmeç
+                    - paragraph: 5 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yayla Kasap, her zaman güvenle et ve tavuk aldığım tek adres diyebilirim. Temiz ve hızlı hizmetin yanında müşteri ile ilişkiler samimiyet ve saygı sınırları içerisinde yürütülüyor.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AA
+                  - generic:
+                    - paragraph: Arda Acay
+                    - paragraph: 4 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Hizmet çok iyi, çalışanlar gayet güler yüzlü insanlar. Ayrıca etleri çok kaliteli; özellikle mangala gideceğiniz zaman etleri buradan almayı unutmayın. Köfte sevenler için gayet lezzetli köfteleri var.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: MA
+                  - generic:
+                    - paragraph: Mustafa Altınbaş
+                    - paragraph: 3 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri kaliteli, yumuşak ve taze. İstediğimiz ölçüde et veriyor, yağ katmıyor, bağ doku katmıyor. Kemikleri istediğimiz gibi küçük kırıyor. Fiyatlar makul.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: E
+                  - generic:
+                    - paragraph: ExrockS
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Et konusunda gayet başarılılar; kaliteli, temiz ürünler, iyi bir dekora sahip dükkan. Kasap olma konusunda başarılı bir yer, çalışanları işini düzgün yapıyorlar.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: İA
+                  - generic:
+                    - paragraph: İrem Artaç
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Çok kaliteli ve temiz bir kasap; ailecek yıllardır oradan alışveriş yapıyoruz. Çalışanlar çok güler yüzlü ve ilgili. Herkese tavsiye ederim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: AE
+                  - generic:
+                    - paragraph: Ayşegül Esen Osso
+                    - paragraph: 2 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Bulunduğum bölgede zırh kıyması veya dolmalık kıyma hazırlayan kasap bulmak zor. Tavsiye üzerine gittim. Mekan temizdi, personeller güler yüzlüydü. Ayrıca Adana kebabını orijinal tarif ile hazırlamışlardı. Ürünlerinin lezzetini beğendim.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: EE
+                  - generic:
+                    - paragraph: Ersoy Erdal
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Yok yok.. Aradığınız her şeyi hem çok taze hem çok güvenilir olarak bulabileceğiniz bir yer. Bırakın süslü püslü market reyonlarını ve bir uğrayın bence. Bir şey almadan çıkamazsınız zaten.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÖ
+                  - generic:
+                    - paragraph: Fırat Özen
+                    - paragraph: 9 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Kuyumcu vitrini gibi dizilmiş tertemiz ve en kaliteli etler sunuyorlar. Son derece makul fiyatlara ve muhteşem bir hizmet ile.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: KS
+                  - generic:
+                    - paragraph: Kuzey Suhan
+                    - paragraph: 4 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: 10 yıldır müşterileriyim. Bir gün kötü malzeme veya kötü davranış görmedim. 2 çocuğumu buranın etleriyle büyüttüm ve büyütüyorum. Aynen devam, ellerinize sağlık.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: SÜ
+                  - generic:
+                    - paragraph: Salih Ünal
+                    - paragraph: 5 ay önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Etleri daima taze ve kaliteli. Çalışanlar işinin ehli. İstediğiniz türde etleri hazır olarak bulabilirsiniz. Ben özellikle kıyma, mangallık et konusunda Ankara'nın diğer ucunda olsam buraya gider alışverişimi yaparım. Bugüne kadar misafirlerime beni asla mahcup etmeyen bu mekanı kaliteli et arayanlara tavsiye ediyorum.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: FÇ
+                  - generic:
+                    - paragraph: Fatih Ç.
+                    - paragraph: 1 yıl önce
+                - img
+              - generic:
+                - img
+                - img
+                - img
+                - img
+                - img
+              - paragraph: Evime yakın olmamasına rağmen uzun süredir et ve et ürünlerini tercih ettiğim kasap. Özellikle temizliği ve çalışanlarının titizliği sebebiyle kendilerini tercih ediyorum. Yaz kış her türlü et ürününü bulabileceğiniz bir işletme. Daha bu güne kadar şunu da aldım ve memnun kalmadım diyeceğim bir alışverişim olmadı.
+        - generic:
+          - heading "BİZİ DEĞERLENDİRİN" [level=3]
+          - link "Google'da Yorum Yaz":
+            - /url: https://maps.app.goo.gl/WZsE7EFuYxmFqpSq8
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img "Etlik Yayla Kasabı"
+              - generic: Etlik Yayla Kasabı
+            - paragraph: Ankara / Etlik — Günlük taze et, özel kesim, hijyen garantisi.
+            - paragraph: 🏆 Ankara'da Yılın Kasabı
+          - generic:
+            - heading "Sayfalar" [level=4]
+            - link "Anasayfa":
+              - /url: /
+            - link "Katalog":
+              - /url: /katalog
+            - link "Et Rehberi":
+              - /url: /et-rehberi
+            - link "Hakkımızda":
+              - /url: /hakkimizda
+            - link "İletişim":
+              - /url: /iletisim
+            - link "Sipariş Ver →":
+              - /url: https://www.yemeksepeti.com/shop/uowf/etlik-yayla-kasabi-and-mandira
+          - generic:
+            - heading "Bize Ulaşın" [level=4]
+            - paragraph: Yayla Mah. Bağcı Cad. 52/B Keçiören, Ankara 06010
+            - paragraph: 09:00 – 21:00
+            - link "Haritada Gör →":
+              - /url: https://maps.app.goo.gl/WZsE7EFuYxmFqpSq8
+        - generic: © 2026 Etlik Yayla Kasabı. Tüm hakları saklıdır.
+  - alert [ref=e5]
