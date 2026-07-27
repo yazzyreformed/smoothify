@@ -8,6 +8,10 @@ const links = [
   { kind: "route", to: "/iletisim", label: "İletişim" },
 ];
 
+// "Bizi ziyaret et" → iletişim sayfası yerine adresin Google Maps konumu (tekrar olmasın).
+const MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=Smoothify%2C%20100.%20Y%C4%B1l%2C%20Nenehatun%20Cd%20No%3A9%2C%2006700%20%C3%87ankaya%2FAnkara";
+
 export default function Navbar() {
   const path = useRoute();
   const onHome = path === "/";
@@ -84,13 +88,11 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="/iletisim"
+          href={MAPS_URL}
           className="nav-cta"
-          onClick={(e) => {
-            e.preventDefault();
-            setOpen(false);
-            navigate("/iletisim");
-          }}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setOpen(false)}
         >
           Bizi ziyaret et
         </a>
@@ -118,6 +120,15 @@ export default function Navbar() {
             {l.label}
           </a>
         ))}
+        <a
+          className="nav-mobile-cta"
+          href={MAPS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setOpen(false)}
+        >
+          Bizi ziyaret et
+        </a>
       </div>
     </header>
   );

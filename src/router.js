@@ -2,14 +2,23 @@ import { useEffect, useState } from "react";
 
 // Minimal dependency-free client-side router (pushState + popstate).
 
+// Anlık (yumuşak değil) tepeye alma — html { scroll-behavior: smooth } kuralını atlar,
+// böylece sayfa değişince yeni görünüm daima en üstten açılır.
+function jumpToTop() {
+  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+}
+
 export function navigate(to) {
   if (window.location.pathname === to) {
-    window.scrollTo(0, 0);
+    jumpToTop();
     return;
   }
   window.history.pushState({}, "", to);
   window.dispatchEvent(new PopStateEvent("popstate"));
-  window.scrollTo(0, 0);
+  // Yeni görünüm React commit'inden sonra mount olur; hem şimdi hem bir sonraki
+  // frame'de tepeye al ki içerik değişimi yumuşak kaydırmayı yarıda bırakmasın.
+  jumpToTop();
+  requestAnimationFrame(jumpToTop);
 }
 
 // Scroll to a homepage section, going back to "/" first if needed.

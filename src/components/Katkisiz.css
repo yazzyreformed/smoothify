@@ -1,0 +1,319 @@
+/* Katkisiz — Smoothify uyarlaması (kaynak mekanik: NoNastiesScroll) */
+
+/* Yükseklik içerik kolonundan gelir. Arka plan rengi tek bir uzun elemente değil,
+   viewport'u kaplayan sticky .ktz-bg katmanına boyanır (bkz. Katkisiz.jsx notu). */
+.ktz-wrap {
+  position: relative;
+  z-index: 1; /* alt dalganın, sonraki (showcase) bölümün üstüne boyanması için */
+  background: rgb(255, 95, 162); /* JS öncesi/kapalıyken fallback */
+}
+
+/* hero → pembe geçiş dalgası: section'ın üstünde durur, hero'nun içine yükselir.
+   Yalnızca geçiş bölgesinde (bg hâlâ pembeyken) görünür → renk uyumu korunur. */
+.ktz-bridge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: clamp(48px, 6vw, 96px);
+  transform: translateY(-99%);
+  z-index: 4;
+  display: block;
+  pointer-events: none;
+  filter: drop-shadow(0 -6px 14px rgba(255, 95, 162, 0.28));
+}
+
+/* koyu (ink) → showcase geçiş dalgası: section'ın altında durur, showcase'e sarkar.
+   Yalnızca bg tamamen koyulaştığı en dipte göründüğü için renk uyumu korunur. */
+.ktz-bridge-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: clamp(48px, 6vw, 96px);
+  transform: translateY(98%);
+  z-index: 4;
+  display: block;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 16px rgba(42, 28, 61, 0.3));
+}
+
+/* sticky arka plan — section görünürken daima viewport'u kaplar, rengi JS canlandırır.
+   Gerçek 100vh akış yüksekliği alır; içerik negatif margin ile üstüne biner (klasik
+   sticky-bg deseni). Böylece sticky aralığı tüm section boyunca korunur. */
+.ktz-bg {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  pointer-events: none;
+}
+
+/* içerik kolonu: bardağın önünden akar; -100vh ile sticky bg'nin üstüne biner. */
+.ktz-content {
+  position: relative;
+  z-index: 3;
+  margin-top: -100vh; /* bg'nin kapladığı 100vh akışını geri al → içerik section tepesinden başlar */
+  padding-bottom: 42vh; /* bardağın takip ettiği ek scroll mesafesi */
+}
+
+/* ── takip eden bardak ──
+   sticky bottom:0 → taban DAİMA section dibinde (section dışına ÇIKMAZ → taşma yok).
+   Katman sabit yükseklikli + overflow:clip; bardak katmandan UZUN olduğu için ALTI
+   katman sınırında KESİLİR → "yarısı görünür / kesik" görünüm. */
+.ktz-cup-layer {
+  position: sticky;
+  bottom: 0;
+  height: 60vh; /* bardağın GÖRÜNEN yüksekliği */
+  overflow: clip; /* bardağın alt kısmını burada keser */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* bardak üstten hizalı → üst kısım görünür, alt kesik */
+  z-index: 2;
+  pointer-events: none;
+}
+.ktz-cup {
+  height: 92vh; /* katmandan uzun → alt kısmı kesilir */
+  width: auto;
+  /* drop-shadow kaldırıldı: siluetin tamamını takip edip üst/yanlarda blur hale
+     bırakıyordu. Kenarlar net kalsın; alttaki yumuşaklığı fade maskesi sağlıyor. */
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 50%, transparent 63%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 50%, transparent 63%);
+}
+
+/* ── başlık ── */
+.ktz-head {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  padding-top: clamp(3.5rem, 9vh, 6.5rem);
+}
+.ktz-head h2 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  margin: 0;
+  line-height: 1.05;
+  color: #fff;
+}
+.ktz-head p {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.4vw, 1.25rem);
+  margin: 0.7rem 0 0;
+  opacity: 0.92;
+}
+
+/* marquee — bardağın ARKASINDA (z:1) */
+.ktz-marquee {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(2rem, 6vh, 4.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.1rem, 0.6vh, 0.6rem);
+  overflow: clip;
+  pointer-events: none;
+}
+.ktz-row {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+}
+.ktz-row.left {
+  animation: ktz-slide-left 32s linear infinite;
+}
+.ktz-row.right {
+  animation: ktz-slide-right 32s linear infinite;
+}
+.ktz-group {
+  display: inline-flex;
+}
+.ktz-word {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(3.4rem, 8vw, 8.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  padding-right: 0.35em;
+  text-transform: uppercase;
+}
+.ktz-word.ktz-outline {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.85);
+}
+.ktz-word.ktz-solid {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke: 0;
+}
+@keyframes ktz-slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes ktz-slide-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* dev statement — bardağın ÖNÜNDE (z:3) */
+.ktz-mastery {
+  position: relative;
+  z-index: 3;
+  margin-top: clamp(14vh, 22vh, 28vh);
+  text-align: center;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(3.2rem, 8vw, 8.5rem);
+  line-height: 0.92;
+  letter-spacing: 0.5px;
+}
+
+/* CTA — iletişim sayfasına giden buton (eski görünmez gradient-text pill yerine) */
+.ktz-cta {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: max-content;
+  max-width: 90%;
+  margin: clamp(3rem, 8vh, 6rem) auto clamp(1.5rem, 4vh, 3rem);
+  padding: 0.8em 1.7em;
+  border-radius: 999px;
+  background: var(--brand-grad);
+  color: #fff;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: 0 16px 38px rgba(255, 95, 162, 0.32);
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s ease;
+}
+.ktz-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 48px rgba(255, 95, 162, 0.44);
+}
+.ktz-cta-arrow {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ktz-cta:hover .ktz-cta-arrow {
+  transform: translateX(5px);
+}
+
+/* anlatı metni */
+.ktz-copy {
+  position: relative;
+  z-index: 3;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+.ktz-copy b {
+  display: block;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  /* metin bardağın önüne denk geldiğinde okunur kalsın */
+  text-shadow: 0 2px 14px rgba(42, 28, 61, 0.55);
+}
+.ktz-copy p {
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.92;
+  text-shadow: 0 2px 14px rgba(42, 28, 61, 0.5);
+}
+
+/* 5 nitelik dairesi — section'ın EN DİBİNDE, bardağın ÖNÜNDE (absolute) */
+.ktz-badges {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: clamp(2.5rem, 7vh, 5rem);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: clamp(0.75rem, 2.5vw, 2.25rem);
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+}
+.ktz-badge {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: clamp(92px, 9.5vw, 148px);
+  height: clamp(92px, 9.5vw, 148px);
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  color: #fff;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1vw, 0.95rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 767px) {
+  .ktz-cup-layer {
+    height: 46vh;
+  }
+  .ktz-cup {
+    height: 70vh;
+  }
+  .ktz-word {
+    -webkit-text-stroke-width: 1px;
+  }
+  /* Mobilde daireler bardağın önünde bölünüp okunmuyordu → net, dolu pill'ler.
+     Koyu yarı saydam zemin sayesinde bardağın açık kısmında da okunur. */
+  .ktz-badges {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    bottom: clamp(1.4rem, 4vh, 2.6rem);
+    padding: 0 1.1rem;
+  }
+  .ktz-badge {
+    width: auto;
+    height: auto;
+    border-radius: 999px;
+    padding: 0.55em 0.95em;
+    background: rgba(42, 28, 61, 0.62);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(6px);
+    font-size: 0.8rem;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ktz-row.left,
+  .ktz-row.right {
+    animation: none;
+  }
+}

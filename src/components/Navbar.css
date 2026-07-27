@@ -148,8 +148,8 @@
   box-shadow: 0 20px 40px rgba(42, 28, 61, 0.12);
 }
 .nav.open .nav-mobile {
-  max-height: 340px;
-  padding: 10px clamp(20px, 5vw, 56px) 20px;
+  max-height: 460px;
+  padding: 10px clamp(20px, 5vw, 56px) 22px;
 }
 .nav-mobile a {
   color: var(--ink);
@@ -166,6 +166,19 @@
 }
 .nav-mobile a:last-child {
   border-bottom: none;
+}
+
+/* mobil menüdeki "Bizi ziyaret et" — gradient pill CTA (Maps'e gider) */
+.nav-mobile .nav-mobile-cta {
+  margin-top: 14px;
+  padding: 14px 18px;
+  border-bottom: none;
+  border-radius: 999px;
+  background: var(--brand-grad);
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 12px 26px rgba(255, 95, 162, 0.3);
 }
 
 @media (max-width: 860px) {

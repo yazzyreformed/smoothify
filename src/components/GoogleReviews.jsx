@@ -7,35 +7,35 @@ const row1 = [
     name: "Gizem Işıldak",
     time: "2 yıl önce",
     avatarBg: "#ff5fa2", // brand-pink
-    text: "İnanılmaz tatlı bir mekan, sahibi de öyle. Tamamen organik, vegan ve temiz içerikli Smoothie ve bowlları var ❤️ bayıldım ben! Özellikle Acai ve tahinli hurmalı bowl harika. Smoothielerinin de hepsi ayrı güzel. Yaz aylarında enfes gerçekten.",
+    text: "İnanılmaz tatlı bir mekan, sahibi de öyle. Tamamen organik, vegan ve temiz içerikli Smoothie ve bowlları var ❤️ bayıldım ben. Özellikle Acai ve tahinli hurmalı bowl harika. Smoothielerinin de hepsi ayrı güzel. Yaz aylarında enfes gerçekten.",
   },
   {
     id: 2,
     name: "Serkan Polat",
     time: "7 ay önce",
     avatarBg: "#23c89a", // doping green
-    text: "Sağlıklı içecekler için mükemmel bir mekan. Lokasyon merkezi. Herkes çok güleryüzlü ve samimi. Teşekkürler.",
+    text: "Sağlıklı içecekler için mükemmel bir mekan. Lokasyon merkezi. Herkes çok güleryüzlü. Teşekkürler.",
   },
   {
     id: 3,
     name: "yiğit kalaycıoğlu",
     time: "2 yıl önce",
     avatarBg: "#ffa41b", // aloha orange
-    text: "İşletmede harika bir deneyim yaşadım! Lezzetli ve serinletici içecekleriyle sıcak yaz günlerinde tam bir kurtarıcı. Özellikle meyve aromalı smoothie'leri enfes! Personelin samimiyeti ve dükkanın temizliği de ekstra artılar.",
+    text: "İşletmede harika bir deneyim yaşadım! Lezzetli ve serinletici içecekleriyle sıcak yaz günlerinde tam bir kurtarıcı. Özellikle meyve aromalı smootie'leri enfes! Personelin samimiyeti ve dükkanın temizliği de ekstra artılar. Kesinlikle tekrar ziyaret edeceğim!",
   },
   {
     id: 4,
     name: "SAU",
     time: "2 yıl önce",
     avatarBg: "#8a7dff", // brand-violet
-    text: "Smoothie'ler çok çok iyi. Özellikle tahinli, muzlu ve hurmalı olan smoothie'yi tavsiye ediyorum, tadı tek kelimeyle harika!",
+    text: "Smoothie'ler çok iyi. Tahinli, muzlu ve hurmalı olanı tavsiye ediyorum harika.",
   },
   {
     id: 5,
     name: "Cuneyt Andac",
     time: "2 yıl önce",
     avatarBg: "#15b7d6", // hawaiian blue
-    text: "Günün her saatinde her biri sağlıklı, doğal ve damağınızda muhteşem tatlar bırakan smoothie'leriyle tek kelimeyle mükemmel. Kesinlikle deneyin derim.",
+    text: "Günün her saatinde her biri sağlıklı, doğal ve damağınızda muhteşem tadlar bırakan smoothie leriyle tek kelimeyle mükemmel. Kesinlikle deneyin derim.",
   },
 ];
 
@@ -45,35 +45,35 @@ const row2 = [
     name: "Ece Kansu",
     time: "2 yıl önce",
     avatarBg: "#ff8a5b", // açai orange-pink
-    text: "Dekorasyon ve ambiyansıyla adeta yazlık bir yerdeymiş hissi yaratıyor 💫 Ayrıca glutensiz smoothie seçeneklerinin olması benim gibi çölyak hastaları için şahane. Kesinlikle tavsiye edilir.",
+    text: "Dekorasyon ve ambiyansıyla yazlık bir yerdemiş hissi yaratıyor💫 Ayrıca glutensiz smoothylerin olması benim gibi çölyak hastaları için şahane. Kesinlikle tavsiye edilir.",
   },
   {
     id: 7,
     name: "MINA LOTFI",
     time: "2 yıl önce",
     avatarBg: "#28e0d4", // spring teal
-    text: "Hem çok sağlıklı hem de inanılmaz lezzetli! Yolunuz Kadıköy'e düşerse mutlaka denemelisiniz 👍",
+    text: "Hem sağlıklı hem lezzetli mutlaka denemelisiniz 👍",
   },
   {
     id: 8,
     name: "Mine İmir",
     time: "2 yıl önce",
     avatarBg: "#ff8f8f", // acidic soft-red
-    text: "I absolutely love it here.. 🥰 Everything is so fresh and delicious. I will definitely come back!",
+    text: "I love it.. 🥰 I will come back",
   },
   {
     id: 9,
     name: "Doğa Emrah Şedit",
     time: "2 yıl önce",
     avatarBg: "#ffb02e", // chocofy yellow-gold
-    text: "Tazeliği, güler yüzlü hizmeti ve enfes smoothie tarifleriyle Kadıköy'ün en iyisi. Kesinlikle tavsiye ediyorum 👍",
+    text: "Kesinlikle tavsiye ediyorum👍",
   },
   {
     id: 10,
     name: "Derya Kurt",
     time: "2 yıl önce",
     avatarBg: "#ff5fa2", // brand-pink
-    text: "Great tastes, friendly staff and a very cozy atmosphere. Highly recommended for a healthy break!",
+    text: "great tastes",
   },
 ];
 

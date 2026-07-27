@@ -5,12 +5,18 @@ import "./SmoothieShowcase.css";
 const TRANSITION_MS = 720;
 const AUTOPLAY_MS = 5000;
 
+// Katkısız section'ındaki bardak mango-ananas (HAWAIIAN) → showcase de onunla başlasın.
+const START_INDEX = Math.max(
+  0,
+  smoothies.findIndex((s) => s.name === "HAWAIIAN")
+);
+
 export default function SmoothieShowcase() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(START_INDEX);
   const [prevIndex, setPrevIndex] = useState(null);
   const [direction, setDirection] = useState(1);
   const lockRef = useRef(false);
-  const activeIndexRef = useRef(0);
+  const activeIndexRef = useRef(START_INDEX);
   const autoplayRef = useRef(null);
   const pausedRef = useRef(false);
 
@@ -58,13 +64,39 @@ export default function SmoothieShowcase() {
     [goTo, startAutoplay]
   );
 
-  // Autoplay lifecycle
+  // Autoplay lifecycle — Katkısız bölümüyle süreklilik için, showcase görünüme
+  // girene kadar HAWAIIAN (mango-ananas) karesinde beklet; girince döngü başlasın.
   useEffect(() => {
     const reduce = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-    if (!reduce) startAutoplay();
-    return () => window.clearInterval(autoplayRef.current);
+    if (reduce) return;
+
+    const el = document.getElementById("showcase");
+    if (!el) {
+      startAutoplay();
+      return () => window.clearInterval(autoplayRef.current);
+    }
+
+    let started = false;
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting && !started) {
+            started = true;
+            startAutoplay();
+            io.disconnect();
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+    io.observe(el);
+
+    return () => {
+      io.disconnect();
+      window.clearInterval(autoplayRef.current);
+    };
   }, [startAutoplay]);
 
   // Keyboard arrows (does not hijack page scroll)

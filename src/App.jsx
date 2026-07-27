@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar.jsx";
 import PhotoHero from "./components/PhotoHero.jsx";
+import Katkisiz from "./components/Katkisiz.jsx";
 import SmoothieShowcase from "./components/SmoothieShowcase.jsx";
 import SmoothiesGrid from "./components/SmoothiesGrid.jsx";
 import SocialCorner from "./components/SocialCorner.jsx";
@@ -27,6 +28,7 @@ export default function App() {
     view = (
       <main>
         <PhotoHero />
+        <Katkisiz />
         <SmoothieShowcase />
         <SmoothiesGrid />
         <SocialCorner />

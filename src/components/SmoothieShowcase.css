@@ -213,8 +213,13 @@
   object-fit: contain;
   transform: translate(-50%, -50%);
   filter: drop-shadow(0 38px 42px rgba(40, 20, 0, 0.32));
-  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
-    filter 0.5s ease;
+  /* Sadece opacity + transform animasyonu → GPU'da akıcı çapraz geçiş.
+     blur() filtresi animasyonu kaldırıldı (asıl kasma sebebiydi). */
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+  transform-origin: center center;
+  backface-visibility: hidden;
   -webkit-user-drag: none;
   user-select: none;
 }
@@ -225,19 +230,16 @@
 }
 .smoothieImg.hover {
   opacity: 0;
-  transform: translate(-50%, -50%) scale(1.02);
-  filter: drop-shadow(0 38px 42px rgba(40, 20, 0, 0.32)) blur(8px);
+  transform: translate(-50%, -50%) scale(1.06);
 }
 
 .smoothieVisual:hover .base {
   opacity: 0;
-  transform: translate(-50%, -50%) scale(0.97);
-  filter: drop-shadow(0 38px 42px rgba(40, 20, 0, 0.32)) blur(7px);
+  transform: translate(-50%, -50%) scale(0.95);
 }
 .smoothieVisual:hover .hover {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.03);
-  filter: drop-shadow(0 38px 46px rgba(40, 20, 0, 0.34)) blur(0);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* contact shadow on the ground */
