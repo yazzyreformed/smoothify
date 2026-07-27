@@ -143,7 +143,7 @@ export default function GoogleReviews() {
         <div className="reviews-cta-banner">
           <h3 className="reviews-cta-title">BİZİ DEĞERLENDİRİN</h3>
           <a
-            href="https://search.google.com/local/writereview?placeid=ChIJy9z7T7Sy5YgRxqS-zWcW3yA" // Replace with real place ID if available, otherwise general search
+            href="https://search.google.com/local/writereview?placeid=ChIJwRXmNKRP0xQRUm2_zQJt4eo"
             target="_blank"
             rel="noopener noreferrer"
             className="google-write-btn"

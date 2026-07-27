@@ -440,12 +440,19 @@
     order: -1;
     padding: 0;
     align-items: flex-start;
-    padding-top: 7vh;
+    padding-top: 6vh;
   }
-  .flavor-text { font-size: clamp(48px, 16vw, 92px); }
-  .visual-col { padding-left: 0; }
-  .smoothieVisual { height: 46vh; width: 70vw; }
+  .flavor-text { font-size: clamp(44px, 15vw, 92px); }
+  /* title-block, pagination dots'un ÜSTÜNDE kalsın → alt boşluk (çakışma çözümü) */
+  .visual-col {
+    padding-left: 0;
+    padding-bottom: clamp(62px, 9vh, 92px);
+  }
+  .smoothieVisual { height: 42vh; width: 72vw; }
+  .title-block { margin-top: 6px; }
   .nav-arrow { width: 52px; height: 52px; }
+  /* "KEŞFET" scroll ipucu masaüstüne özel; mobilde dots/başlıkla çakışıyordu → gizle */
+  .scroll-cue { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

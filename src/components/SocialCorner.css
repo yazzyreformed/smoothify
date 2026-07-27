@@ -406,15 +406,16 @@
 
 @media (max-width: 600px) {
   :root {
-    --tx-1: 85px;
+    --tx-1: 74px;
     --tx-2: 150px;
   }
+  /* merkez video kartı büyütüldü (küçük kalmıştı); yan kartlar arkadan peek eder */
   .social-card {
-    width: 170px;
-    height: 280px;
+    width: 246px;
+    height: 408px;
   }
   .social-carousel-track {
-    height: 310px;
+    height: 440px;
   }
   /* Hide the outer 2 layers for maximum space and focus on mobile */
   .social-card.left-2,
@@ -423,33 +424,33 @@
     pointer-events: none;
   }
   .social-card-badge {
-    top: 10px;
-    left: 10px;
-    width: 28px;
-    height: 28px;
+    top: 12px;
+    left: 12px;
+    width: 32px;
+    height: 32px;
   }
   .social-card-badge svg {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
   .social-audio-toggle {
-    top: 10px;
-    right: 10px;
-    width: 28px;
-    height: 28px;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
   }
   .social-audio-toggle svg {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
   .social-card-info {
-    padding: 14px 12px;
+    padding: 16px 14px;
   }
   .social-card-handle {
-    font-size: 13px;
+    font-size: 14px;
   }
   .social-card-desc {
-    font-size: 11px;
+    font-size: 12px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
